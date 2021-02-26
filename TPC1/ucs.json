@@ -1,0 +1,22 @@
+[
+    {
+        "id": "DC",
+        "designação": "Descoberta de Conhecimento",
+        "anoLetivo": "2021"
+    },
+    {
+        "id": "IS",
+        "designação": "Interoperabilidade Semântica",
+        "anoLetivo": "2021"
+    },
+    {
+        "id": "PRC",
+        "designação": "Processamento e Representação de Conhecimento",
+        "anoLetivo": "2021"
+    },
+    {
+        "id": "SPLN",
+        "designação": "Scripting no Processamento de Linguagem Natural",
+        "anoLetivo": "2021"
+    }
+]

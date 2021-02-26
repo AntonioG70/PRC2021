@@ -1,0 +1,1338 @@
+@prefix : <http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc> .
+
+<http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#ensina
+:ensina rdf:type owl:ObjectProperty ;
+        owl:inverseOf :ensinadaPor ;
+        rdfs:domain :Docente ;
+        rdfs:range :UnidadeCurricular .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#ensinadaPor
+:ensinadaPor rdf:type owl:ObjectProperty ;
+             rdfs:domain :UnidadeCurricular ;
+             rdfs:range :Docente .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#frequenta
+:frequenta rdf:type owl:ObjectProperty ;
+           owl:inverseOf :éFrequentadaPor ;
+           rdfs:domain :Aluno ;
+           rdfs:range :UnidadeCurricular .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#éAlunoDe
+:éAlunoDe rdf:type owl:ObjectProperty ;
+          owl:inverseOf :éProfessorDe .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#éFrequentadaPor
+:éFrequentadaPor rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#éProfessorDe
+:éProfessorDe rdf:type owl:ObjectProperty ;
+              owl:propertyChainAxiom ( :ensina
+                                       :éFrequentadaPor
+                                     ) .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#anoLetivo
+:anoLetivo rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#designacao
+:designacao rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#nome
+:nome rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#Aluno
+:Aluno rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#Docente
+:Docente rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#UnidadeCurricular
+:UnidadeCurricular rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#DC
+:DC rdf:type owl:NamedIndividual ,
+			 :UnidadeCurricular ;
+	:anoLetivo 2021 ;
+	:designacao "Descoberta de Conhecimento" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#IS
+:IS rdf:type owl:NamedIndividual ,
+			 :UnidadeCurricular ;
+	:anoLetivo 2021 ;
+	:designacao "Interoperabilidade Semântica" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#PRC
+:PRC rdf:type owl:NamedIndividual ,
+			 :UnidadeCurricular ;
+	:anoLetivo 2021 ;
+	:designacao "Processamento e Representação de Conhecimento" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#SPLN
+:SPLN rdf:type owl:NamedIndividual ,
+			 :UnidadeCurricular ;
+	:anoLetivo 2021 ;
+	:designacao "Scripting no Processamento de Linguagem Natural" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#jcr
+:jcr rdf:type owl:NamedIndividual ;
+	:ensina :PRC ;
+	:nome "José Carlos Ramalho"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#jj
+:jj rdf:type owl:NamedIndividual ;
+	:ensina :SPLN ;
+	:nome "José João"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#ab
+:ab rdf:type owl:NamedIndividual ;
+	:ensina :IS ;
+	:nome "António Abelha"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#jmm
+:jmm rdf:type owl:NamedIndividual ;
+	:ensina :DC ;
+	:nome "José Manuel Machado"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A87747
+:A87747 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Myra Brady"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A85851
+:A85851 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Minerva Pugh"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A84367
+:A84367 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Harrington Wade"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A82590
+:A82590 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Savannah Wallace"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A88642
+:A88642 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Sheila Byrd"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A88691
+:A88691 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Watts Stone"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A81225
+:A81225 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Finley Walsh"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A81848
+:A81848 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Becky Wyatt"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A84273
+:A84273 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Saundra Shepherd"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A86654
+:A86654 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Tammy Knapp"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A82835
+:A82835 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Bernadine Mckinney"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A87535
+:A87535 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Fuller Kennedy"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A84679
+:A84679 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Patricia Vinson"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A87320
+:A87320 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Fern Chapman"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A88057
+:A88057 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Schmidt Farmer"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A88907
+:A88907 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Padilla Blankenship"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A88771
+:A88771 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Letha Hutchinson"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A85579
+:A85579 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Shepard Hyde"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A89968
+:A89968 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Kelli Carlson"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A80676
+:A80676 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Weber Webb"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A87404
+:A87404 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Danielle Green"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A80292
+:A80292 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Rachael Acosta"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A84943
+:A84943 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Essie Le"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A86551
+:A86551 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Jerri Reese"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A82829
+:A82829 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Bender Sykes"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A83530
+:A83530 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Short Wooten"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A89185
+:A89185 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Karyn Dale"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A88462
+:A88462 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Casey Barton"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A81084
+:A81084 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Angelina Mcmahon"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A84202
+:A84202 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Cummings Osborne"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A85325
+:A85325 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Goff Mckay"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A86424
+:A86424 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Gallagher Wiley"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A80605
+:A80605 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Leonor Lamb"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A80452
+:A80452 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Lorna Cunningham"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A87487
+:A87487 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Lea Bell"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A89384
+:A89384 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Byrd Warner"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A83692
+:A83692 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Shepherd Whitley"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A86683
+:A86683 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Ola Mooney"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A87482
+:A87482 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Aline Sargent"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A82170
+:A82170 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Parker Pate"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A81060
+:A81060 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Claudette Ortega"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A85316
+:A85316 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Battle Sweet"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A86085
+:A86085 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Marcia Brooks"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A87681
+:A87681 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Graham Finley"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A88675
+:A88675 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Sheppard Mack"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A86236
+:A86236 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Pickett Ramirez"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A86055
+:A86055 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Laurel Todd"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A82599
+:A82599 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Rich Cabrera"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A81520
+:A81520 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Gale Clark"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A85934
+:A85934 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Ethel Trujillo"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A80342
+:A80342 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Dorsey Vaughn"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A83075
+:A83075 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Riddle Barrera"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A85727
+:A85727 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Francis Davidson"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A86788
+:A86788 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Aurora Bender"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A85247
+:A85247 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Lindsey Gilbert"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A83867
+:A83867 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Benson Compton"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A89211
+:A89211 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Reynolds Foley"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A81221
+:A81221 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Cervantes Sampson"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A83408
+:A83408 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Hilda Drake"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A85446
+:A85446 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Edith Goodman"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A88587
+:A88587 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Jimmie Mcfarland"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A83952
+:A83952 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Heather Whitfield"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A88079
+:A88079 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Reilly Lowe"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A84542
+:A84542 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Elaine Douglas"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A88811
+:A88811 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Paul Lewis"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A86507
+:A86507 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Cole Mcgowan"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A82340
+:A82340 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Ruth Griffith"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A83466
+:A83466 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Michael Hodges"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A80220
+:A80220 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Yvonne Cantrell"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A85391
+:A85391 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Molly Barlow"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A81773
+:A81773 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Rosales Stuart"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A81392
+:A81392 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Tonia Mcbride"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A84792
+:A84792 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Vance Mccoy"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A84928
+:A84928 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Johnston Lloyd"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A81835
+:A81835 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Glenna Trevino"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A85503
+:A85503 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Bentley Bowman"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A82616
+:A82616 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Carson Barker"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A85500
+:A85500 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Barr Farley"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A88255
+:A88255 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Smith Leon"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A83212
+:A83212 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Welch Garrett"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A87982
+:A87982 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Harmon Jefferson"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A84681
+:A84681 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Brittany Farrell"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A80877
+:A80877 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Etta Reilly"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A82125
+:A82125 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Kelley Wilkerson"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A89115
+:A89115 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Garza Peck"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A83310
+:A83310 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Dawson Craft"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A85151
+:A85151 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Shaw Welch"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A86282
+:A86282 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Terrie Ball"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A83212
+:A83212 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Dudley Atkinson"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A87328
+:A87328 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Hamilton Britt"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A88586
+:A88586 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Susanna Hess"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A88334
+:A88334 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Shelley Sparks"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A89066
+:A89066 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Jensen Wong"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A82158
+:A82158 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Pitts Rocha"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A82431
+:A82431 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Clarice Walton"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A89046
+:A89046 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Adkins Lindsay"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A81091
+:A81091 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Ball Morgan"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A89990
+:A89990 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Lorrie Gomez"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A80109
+:A80109 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Noelle Eaton"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A87766
+:A87766 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Petra Mccarty"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A89830
+:A89830 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Bonner Gutierrez"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A80970
+:A80970 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Pugh Cabrera"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A85875
+:A85875 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Bertie Finch"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A89723
+:A89723 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Eunice Quinn"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A87665
+:A87665 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Levine Blackburn"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A88172
+:A88172 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Brooke Hester"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A84033
+:A84033 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Michael Davidson"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A81273
+:A81273 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Marcia Gonzalez"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A80865
+:A80865 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Rutledge Griffith"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A82106
+:A82106 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Strong Meyer"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A88358
+:A88358 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Chase Parsons"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A86362
+:A86362 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Weiss Bentley"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A86996
+:A86996 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Kim Collins"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A81820
+:A81820 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Weeks Mullins"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A83286
+:A83286 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Gilda Turner"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A81670
+:A81670 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Sabrina Douglas"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A86488
+:A86488 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Chandler Sweet"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A88024
+:A88024 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Hazel Contreras"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A83137
+:A83137 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Lilian Bush"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A88583
+:A88583 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Pena Shannon"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A83839
+:A83839 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Nina Holland"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A88476
+:A88476 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Hewitt Hewitt"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A83960
+:A83960 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Branch Duffy"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A83856
+:A83856 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Nadia Calhoun"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A84894
+:A84894 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "May Tate"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A87604
+:A87604 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Celia Hobbs"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A80586
+:A80586 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Dale Wooten"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A88359
+:A88359 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Patsy Nicholson"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A86200
+:A86200 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Owens Kirby"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A81915
+:A81915 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Gallegos Woodard"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A83715
+:A83715 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Cooper Langley"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A80422
+:A80422 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Belinda Arnold"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A88333
+:A88333 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Hill Atkins"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A80233
+:A80233 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Patel Ayala"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A89505
+:A89505 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Phillips Guerrero"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A88870
+:A88870 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Sandoval Ewing"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A81152
+:A81152 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Short Alvarado"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A83454
+:A83454 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Koch Miranda"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A89756
+:A89756 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Bell Bradshaw"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A80517
+:A80517 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Amelia Walton"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A81907
+:A81907 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Welch Hartman"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A87454
+:A87454 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Lupe Rosa"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A89259
+:A89259 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Martin Bates"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A87350
+:A87350 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Caroline Rush"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A81887
+:A81887 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Saundra Campbell"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A87243
+:A87243 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Hoover Carlson"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A85563
+:A85563 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Bush Berger"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A83567
+:A83567 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Nita Villarreal"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A85412
+:A85412 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Roberts Shepherd"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A85272
+:A85272 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Priscilla Goodman"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A84184
+:A84184 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Cantu Nunez"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A89152
+:A89152 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Cooley Nielsen"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A83669
+:A83669 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Hatfield Justice"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A84768
+:A84768 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Cassie William"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A89145
+:A89145 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Denise Lee"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A82984
+:A82984 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Cote Aguirre"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A80926
+:A80926 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Blair Vaughn"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A83257
+:A83257 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Patterson Nieves"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A87533
+:A87533 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Battle Chavez"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A87596
+:A87596 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Latoya Downs"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A87427
+:A87427 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Florence Hanson"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A86909
+:A86909 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Tonia Vincent"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A87524
+:A87524 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Yang Marquez"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A86247
+:A86247 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Richmond Chaney"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A86278
+:A86278 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Wilkins Cooke"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A89309
+:A89309 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Lauri Kane"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A89858
+:A89858 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Dominguez Brown"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A81118
+:A81118 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Buchanan Fulton"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A88587
+:A88587 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Humphrey Ross"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A85378
+:A85378 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Velasquez Miles"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A83272
+:A83272 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Harrison Norton"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A86797
+:A86797 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Regina Goff"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A83867
+:A83867 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Puckett Roberts"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A83056
+:A83056 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Elsie Puckett"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A88538
+:A88538 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Morrison Fitzpatrick"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A80369
+:A80369 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Guadalupe Casey"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A82876
+:A82876 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Jones Christian"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A82497
+:A82497 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Naomi Koch"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A82258
+:A82258 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Holland Blake"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A86058
+:A86058 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Iris Bryant"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A84443
+:A84443 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Jannie Booker"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A84514
+:A84514 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Sheryl Murray"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A88661
+:A88661 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Louella Morgan"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A84096
+:A84096 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Sampson Figueroa"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A83012
+:A83012 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Blackwell Mcintosh"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A88418
+:A88418 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Adeline Bird"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A82012
+:A82012 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Salas Howe"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A87565
+:A87565 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Madge Craft"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A87197
+:A87197 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Chen Evans"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A83726
+:A83726 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Joy Pollard"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A89465
+:A89465 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Jodi Stafford"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A89041
+:A89041 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Shepherd Gregory"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A86034
+:A86034 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Mullen Baldwin"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A87682
+:A87682 rdf:type owl:NamedIndividual ;
+	:frequenta :DC ;
+	:nome "Roslyn Ryan"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A86248
+:A86248 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Larson Jones"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A83197
+:A83197 rdf:type owl:NamedIndividual ;
+	:frequenta :PRC ;
+	:nome "Andrea Mills"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A88704
+:A88704 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Karin Gallegos"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A89408
+:A89408 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Hawkins Boyer"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A85994
+:A85994 rdf:type owl:NamedIndividual ;
+	:frequenta :SPLN ;
+	:nome "Rita Baxter"  .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/prc2021/uc#A85112
+:A85112 rdf:type owl:NamedIndividual ;
+	:frequenta :IS ;
+	:nome "Marla Pate"  .
+
+

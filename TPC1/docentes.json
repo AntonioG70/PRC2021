@@ -1,0 +1,22 @@
+[
+    {
+        "id": "jcr",
+        "nome": "José Carlos Ramalho",
+        "unidadeCurricular": "PRC"
+    },
+    {
+        "id": "jj",
+        "nome": "José João",
+        "unidadeCurricular": "SPLN"
+    },
+    {
+        "id": "ab",
+        "nome": "António Abelha",
+        "unidadeCurricular": "IS"
+    },
+    {
+        "id": "jmm",
+        "nome": "José Manuel Machado",
+        "unidadeCurricular": "DC"
+    }
+]
