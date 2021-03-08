@@ -69,7 +69,7 @@
         
         :<xsl:value-of select="partitura/@path"/> rdf:type owl:NamedIndividual ;
         
-        :voz <xsl:value-of select="partitura/@voz"/>
+        :voz <xsl:value-of select="partitura/@voz"/> ;
         
         :type <xsl:value-of select="partitura/@type"/> .
         
