@@ -57,7 +57,7 @@
         
         ### http://www.semanticweb.org/antóniocarvalho/ontologies/musica#<xsl:value-of select="designacao"/>-<xsl:value-of select="partitura/@path"/>
         
-        :<xsl:value-of select="designacao"/> rdf:type owl:NamedIndividual ;
+        :<xsl:value-of select="designacao"/>-<xsl:value-of select="partitura/@path"/> rdf:type owl:NamedIndividual ;
         
         :utilizadoEm : <xsl:value-of select="../../@id"/> ;
         
@@ -68,8 +68,6 @@
         ### http://www.semanticweb.org/antóniocarvalho/ontologies/musica#<xsl:value-of select="partitura/@path"/>
         
         :<xsl:value-of select="partitura/@path"/> rdf:type owl:NamedIndividual ;
-        
-        :voz <xsl:value-of select="partitura/@voz"/> ;
         
         :type <xsl:value-of select="partitura/@type"/> .
         
