@@ -1,0 +1,21 @@
+extends layout
+block content
+    .w3-card-4
+        header.w3-container.w3-teal
+            h3 Lista de Classes
+            a(href='http://localhost:7777/') Voltar atrás
+
+        if info.length > 0
+            .w3-container
+                table(class="w3-table-all")
+                    tr 
+                      th Nome
+                    each c in info
+                      tr
+                        td
+                          a(href='http://localhost:7777/repositorios/' + idREP + '/' + c.i) #{c.i}
+        else
+          div(class="w3-container")
+            p Ainda não há classes resgistadas ... 
+        footer(class="w3-container w3-teal")
+          address Gerado por António :: 2021-Março    

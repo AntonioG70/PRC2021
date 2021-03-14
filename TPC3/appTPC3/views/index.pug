@@ -1,0 +1,30 @@
+extends layout
+block content
+    .w3-card-4
+        header.w3-container.w3-teal
+            h3 Lista de Repositórios
+
+        if reps.length > 0
+            .w3-container
+                table(class="w3-table-all")
+                    tr 
+                      th ID
+                      th Title 
+                      th Readable
+                      th Writable 
+                      th State
+                    each r in reps
+                      tr
+                        td
+                          a(href='http://localhost:7777/repositorios/' + r.id) #{r.id}
+                        td= r.title || "Sem título"
+                        td= r.readable
+                        td= r.writable
+                        td= r.state
+        else
+          div(class="w3-container")
+            p Ainda não há repositórios resgistados ... 
+          footer(class="w3-container w3-teal")
+            address Gerado por António :: 2021-Março                
+
+        
