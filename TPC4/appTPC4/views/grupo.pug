@@ -1,0 +1,36 @@
+extends layout
+block content
+    .w3-card-4
+        header.w3-container.w3-teal
+            h3 Página de #{idGrupo}
+
+        if info.length > 0
+            .w3-container
+                table(class="w3-table-all")
+                    each g in info
+                        if g.p == 'name'
+                            tr
+                                th Nome
+                            tr     
+                                td= g.o    
+                        else if g.p == 'number'
+                            tr
+                                th Número
+                            tr     
+                                td= g.o
+                .w3-card-4
+                    header.w3-container.w3-teal
+                        h3 Elementos                        
+                table(class="w3-table-all")      
+                    each g in info
+                        if g.p != 'type' && g.p != 'name' && g.p != 'number'
+                            tr
+                                td
+                                    a(href='http://localhost:7777/elementos/' + g.o) #{g.o}
+        else
+          div(class="w3-container")
+            p Grupo sem propriedades ... 
+        footer(class="w3-container w3-teal")
+            a(href='http://localhost:7777/grupos') Voltar à página dos Grupos
+            address Gerado por António :: 2021-Março
+                
