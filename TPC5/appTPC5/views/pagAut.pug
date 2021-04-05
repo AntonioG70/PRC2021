@@ -1,0 +1,24 @@
+extends layout
+block content
+    .w3-card-4
+        header.w3-container.w3-teal
+            h3 Página de #{idAut}
+            a(href='http://localhost:7777/authors') Voltar atrás 
+
+        if info.length > 0
+            .w3-container
+                table(class="w3-table-all")
+                    tr
+                        each e in info
+                            if e.p != 'type'
+                                th= e.p
+                    tr
+                        each e in info
+                            if e.p != 'type'
+                                td #{e.o}
+
+        else
+            div(class="w3-container")
+                p Autor não encontrado ... 
+        footer(class="w3-container w3-teal")
+            address Gerado por António :: 2021-Março                         

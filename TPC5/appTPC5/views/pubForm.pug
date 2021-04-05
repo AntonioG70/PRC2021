@@ -1,0 +1,84 @@
+extends layout
+
+block content
+    .w3-card-4
+        header.w3-container.w3-teal
+            h3 Registo de Publicação
+
+        form(class="w3-container" action="/pubs/add" method="POST")
+                label(class="w3-text-teal") 
+                    b Name
+                    input(class="w3-input w3-border w3-light-grey" type="text" name="nome")
+
+                label(class="w3-text-teal")
+                    b Type 
+                    select(name="Type")
+                        option
+                        option InProceeding 
+                        option Proceeding
+                        option Book
+                        option InBook
+                        option Article
+                        option Misc 
+                        option Phdthesis
+                        option Masterthesis
+                br
+                label(class="w3-text-teal") 
+                    b Title
+                    input(class="w3-input w3-border w3-light-grey" type="text" name="title")
+
+                label(class="w3-text-teal") 
+                    b Journal
+                    input(class="w3-input w3-border w3-light-grey" type="text" name="journal")
+
+                label(class="w3-text-teal") 
+                    b Address
+                    input(class="w3-input w3-border w3-light-grey" type="text" name="address")
+
+                label(class="w3-text-teal") 
+                    b Booktitle
+                    input(class="w3-input w3-border w3-light-grey" type="text" name="booktitle")            
+
+                label(class="w3-text-teal") 
+                    b HowPublished
+                    input(class="w3-input w3-border w3-light-grey" type="text" name="howpublished")
+
+                label(class="w3-text-teal") 
+                    b Doi
+                    input(class="w3-input w3-border w3-light-grey" type="text" name="doi")
+
+                label(class="w3-text-teal") 
+                    b isbn
+                    input(class="w3-input w3-border w3-light-grey" type="text" name="isbn")
+
+                label(class="w3-text-teal") 
+                    b Year
+                    input(class="w3-input w3-border w3-light-grey" type="text" name="year")
+
+                label(class="w3-text-teal") 
+                    b Publisher
+                    input(class="w3-input w3-border w3-light-grey" type="text" name="publisher")
+
+                label(class="w3-text-teal") 
+                    b Month
+                    input(class="w3-input w3-border w3-light-grey" type="text" name="month")
+
+                label(class="w3-text-teal") 
+                    b Pages
+                    input(class="w3-input w3-border w3-light-grey" type="text" name="pages")
+
+                label(class="w3-text-teal") 
+                    b School
+                    input(class="w3-input w3-border w3-light-grey" type="text" name="School")
+
+                label(class="w3-text-teal") 
+                    b Chapter
+                    input(class="w3-input w3-border w3-light-grey" type="text" name="chapter")                                                             
+
+                input(class="w3-btn w3-blue-grey" type="submit" value="Registar")
+                input(class="w3-btn w3-blue-grey" type="reset" value="Limpar valores")
+                
+                br
+                a(href='http://localhost:7777') Voltar à página inicial
+                br
+                a(href='http://localhost:7777/pubs') Voltar à lista de publicações

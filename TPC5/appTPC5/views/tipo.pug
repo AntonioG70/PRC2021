@@ -1,0 +1,36 @@
+extends layout
+block content
+    .w3-card-4
+        header.w3-container.w3-teal
+            h3 Lista de Publicações por tipo
+            a(href='http://localhost:7777/') Voltar atrás 
+
+        .w3-container
+            table(class="w3-table-all")
+                tr 
+                    td 
+                        a(href='http://localhost:7777/pubs/tipo?type=' + 'Proceeding') Proceeding
+                tr  
+                    td 
+                        a(href='http://localhost:7777/pubs/tipo?type=' + 'InProceeding') InProceeding
+                tr  
+                    td 
+                        a(href='http://localhost:7777/pubs/tipo?type=' + 'Book') Book
+                tr  
+                    td 
+                        a(href='http://localhost:7777/pubs/tipo?type=' + 'InBook') InBook
+                tr   
+                    td 
+                        a(href='http://localhost:7777/pubs/tipo?type=' + 'Masterthesis') Masterthesis
+                tr
+                    td 
+                        a(href='http://localhost:7777/pubs/tipo?type=' + 'Phdthesis') Phdthesis 
+                tr
+                    td 
+                        a(href='http://localhost:7777/pubs/tipo?type=' + 'Article') Article
+                tr
+                    td 
+                        a(href='http://localhost:7777/pubs/tipo?type=' + 'Misc') Misc
+                    
+        footer(class="w3-container w3-teal")
+            address Gerado por António :: 2021-Março

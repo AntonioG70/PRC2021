@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    .w3-card-4
+        header.w3-container.w3-teal
+            h3 Registo de Autor
+
+        form(class="w3-container" action="/authors" method="POST")
+                label(class="w3-text-teal") 
+                    b ID
+                    input(class="w3-input w3-border w3-light-grey" type="text" name="id")
+
+                label(class="w3-text-teal") 
+                    b Nome Completo
+                    input(class="w3-input w3-border w3-light-grey" type="text" name="nome")                                                           
+
+                input(class="w3-btn w3-blue-grey" type="submit" value="Registar")
+                input(class="w3-btn w3-blue-grey" type="reset" value="Limpar valores")
+                
+                br
+                a(href='http://localhost:7777') Voltar à página inicial
+                br
+                a(href='http://localhost:7777/authors') Voltar à lista de publicações
