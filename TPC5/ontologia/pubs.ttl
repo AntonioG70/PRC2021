@@ -32,14 +32,14 @@
 #    Object Properties
 #################################################################
 
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#autorDe
+:autorDe rdf:type owl:ObjectProperty ;
+         owl:inverseOf :temAutor .
+
+
 ###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#autorRefEm
 :autorRefEm rdf:type owl:ObjectProperty ;
             owl:inverseOf :temAutorRef .
-
-
-###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#daAutoriaDe
-:daAutoriaDe rdf:type owl:ObjectProperty ;
-             owl:inverseOf :temAutor .
 
 
 ###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#editadoPor
@@ -216,2513 +216,2222 @@
 #    Individuals
 #################################################################
 
-### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#Ram2000
-              :Ram2000 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :Phdthesis ;
-                     :temAutorRef :jcr ;
-		             
-                     :title "Anota��o Estrutural de Documentos e sua Sem�ntica" ;
-                     :address "Universidade do Minho" ;
-                     :school "Tese de Doutoramento";
-                     :year 2000 ;
-                     :month "07";
-                     :doi "http://hdl.handle.net/1822/5625" ; .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#Ram93
-              :Ram93 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :Masterthesis ;
-                     :temAutorRef :jcr ;
-		             
-                     :title "Um Compilador para o GLiTCH" ;
-                     :school "Escola de Engenharia - Universidade do Minho";
-                     :year 1993 ;
-                     :month "10"; .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#cisti2017
-              :cisti2017 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :ap ;
-		     
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#BKRFBR08
+:BKRFBR08 rdf:type owl:NamedIndividual ,
+                   :InProceeding ,
+                   :Publication ;
+          :temAutor :ar ,
+                    :mk ;
+          :temAutorRef :aab ,
+                       :cb ,
+                       :jcr ,
+                       :mf ;
+          :address "Aarhus, Danmark" ;
+          :booktitle "ECDL2008 - European Conference on Research and Advanced Technology for Digital Libraries" ;
+          :doi "http://hdl.handle.net/1822/8239" ;
+          :month "09" ;
+          :title "Distributed Preservation Services: Integrating Planning and Actions" ;
+          :year 2008 .
 
-                     :temAutorRef :jcr ;
-		     :temAutorRef :mf ;
-		     :temAutorRef :lf ;
-		             
-                     :address "ISCTE, Lisboa, Portugal" ;
-                     
-                     :title "RODA-in: A generic tool for the mass creation of Submission Information Packages" ;
-                     :booktitle "12th Iberian Conference on Information Systems and Technologies (CISTI)," ;
-                     :year 2017 ;
-                     :month "06.24";
-                     :doi "http://hdl.handle.net/1822/46093" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#iPRES2016
-              :iPRES2016 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :bf ;
-		     
 
-                     :temAutorRef :lf ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :mf ;
-		             
-                     :address "Bern, Switzerland" ;
-                     
-                     :title "Database Preservation Toolkit: A relational database conversion and normalization tool" ;
-                     :booktitle "iPRES: 13th International Conference on Digital Preservation" ;
-                     :year 2016 ;
-                     :month "10.04";
-                     :doi "http://hdl.handle.net/1822/43479" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#bad2015b
-              :bad2015b rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :asantos ;
-		     
-:temAutor :jmoreira ;
-		     
-:temAutor :eloy ;
-		     
-:temAutor :jcarvalho ;
-		     
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#FBR05_CAPSI
+:FBR05_CAPSI rdf:type owl:NamedIndividual ,
+                      :InProceeding ,
+                      :Publication ;
+             :temAutor :aab ;
+             :temAutorRef :jcr ,
+                          :mf ;
+             :address "Bragan�a - Portugal" ;
+             :booktitle "6� Confer�ncia da Associa��o Portuguesa de Sistemas de Informa��o" ;
+             :doi "http://hdl.handle.net/1822/3616" ;
+             :month "10.26" ;
+             :title "Avalia��o Autom�tica de Migra��o em Redes Distribu�das de Conversores" ;
+             :year 2005 .
 
-                     :temAutorRef :jcr ;
-		     :temAutorRef :mf ;
-		     :temAutorRef :hsilva ;
-		     :temAutorRef :lf ;
-		             
-                     :address "Universidade de �vora, Portugal" ;
-                     
-                     :title "PT-CRIS: Um miradouro sobre o universo cient�fico nacional" ;
-                     :booktitle "12� Congresso Nacional BAD" ;
-                     :year 2015 ;
-                     :month "10.21";
-                     :doi "http://hdl.handle.net/1822/37856" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#bad2015a
-              :bad2015a rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :alexandra ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :penteado ;
-		             
-                     :address "Universidade de �vora, Portugal" ;
-                     
-                     :title "Uma ontologia para os processos de neg�cio da Administra��o" ;
-                     :booktitle "12� Congresso Nacional BAD" ;
-                     :year 2015 ;
-                     :month "10.21";
-                     :doi "http://hdl.handle.net/1822/38497" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#edicic2015
-              :edicic2015 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :alexandra ;
-		     
-:temAutor :penteado ;
-		     
 
-                     :temAutorRef :jcr ;
-		             
-                     :address "Madrid, Espanha" ;
-                     
-                     :title "Da gest�o da informa��o � gest�o do conhecimento: uma proposta para a e-Administra��o em Portugal" ;
-                     :booktitle "VII Encuentro Ib�rico EDICIC 2015" ;
-                     :year 2015 ;
-                     :month "11.16";
-                     :doi "http://hdl.handle.net/1822/38496" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#dlm2014
-              :dlm2014 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :hsilva ;
-		     
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#FBR06_Ariadne
+:FBR06_Ariadne rdf:type owl:NamedIndividual ,
+                        :Article ,
+                        :Publication ;
+               :temAutorRef :aab ,
+                            :jcr ,
+                            :mf ;
+               :doi "http://hdl.handle.net/1822/5571" ;
+               :issn "1361-3200" ;
+               :journal "Ariadne" ;
+               :month "July" ;
+               :title "A foundation for automatic digital preservation" ;
+               :year 2006 ;
+               :number 48 .
 
-                     :temAutorRef :jcr ;
-		     :temAutorRef :lf ;
-		             
-                     :address "Lisbon, Portugal" ;
-                     
-                     :title "Database Preservation Toolkit: a flexible tool to normalize and give access to databases" ;
-                     :booktitle "DLM Forum � 7th Triennial Conference: Making the Information Governance Landscape in Europe" ;
-                     :year 2014 ;
-                     :month "11.12";
-                     :doi "http://hdl.handle.net/1822/35183" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#ipres2013
-              :ipres2013 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :aa ;
-		     
-:temAutor :bs ;
-		     
-:temAutor :mr ;
-		     
 
-                     :temAutorRef :lf ;
-		     :temAutorRef :mf ;
-		     :temAutorRef :jcr ;
-		             
-                     :address "Lisbon, Portugal" ;
-                     
-                     :title "Automatic preservation watch using information extraction on the Web : a case study on semantic extraction of natural language for digital preservation" ;
-                     :booktitle "iPRES 2013 - 10th International Conference on Preservation of Digital Objects" ;
-                     :year 2013 ;
-                     :month "09.20";
-                     :doi "http://hdl.handle.net/1822/25214" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#or2013
-              :or2013 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :lf ;
-		     :temAutorRef :cb ;
-		     :temAutorRef :kd ;
-		     :temAutorRef :mf ;
-		     :temAutorRef :jcr ;
-		             
-                     :address "Charlottetown, Canada" ;
-                     
-                     :title "Supporting the preservation lifecycle in repositories" ;
-                     :booktitle "Open Repositories 2013" ;
-                     :year 2013 ;
-                     :month "07.08";
-                     :doi " http://hdl.handle.net/1822/25101" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#archiving2013
-              :archiving2013 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :mf ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :lf ;
-		             
-                     :address "Washington DC, Estados Unidos" ;
-                     
-                     :title "	Guidelines for legacy repository migration" ;
-                     :booktitle "IS&T Archiving 2013" ;
-                     :year 2013 ;
-                     :month "04.02-05";
-                     :doi "http://hdl.handle.net/1822/23978" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#guimaramus2012
-              :guimaramus2012 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :jcr ;
-		             
-                     :address "Pal�cio Vila Flor, Guimar�es" ;
-                     
-                     :title "	MuseCode: � procura da linearidade na m�sica tonal" ;
-                     :booktitle "Pensar a M�sica" ;
-                     :year 2012 ;
-                     :month "03.23";
-                     :doi "http://hdl.handle.net/1822/21660" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#bad2012
-              :bad2012 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :jcr ;
-		     :temAutorRef :mf ;
-		     :temAutorRef :lf ;
-		             
-                     :address "Funda��o Calouste Gulbenkian, Lisboa" ;
-                     
-                     :title "Boas Pr�ticas na Migra��o de Reposit�rios: li��es aprendidas com o CALM e o ARQBASE" ;
-                     :booktitle "11� Congresso Nacional de Bibliotec�rios, Arquivistas e Documentalistas" ;
-                     :year 2012 ;
-                     :month "10.20";
-                     :doi "http://hdl.handle.net/1822/21611" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#icadl2012
-              :icadl2012 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :lf ;
-		     :temAutorRef :pp ;
-		     :temAutorRef :kd ;
-		     :temAutorRef :cb ;
-		     :temAutorRef :mf ;
-		     :temAutorRef :jcr ;
-		             
-                     :address "Taipei, Taiwan" ;
-                     
-                     :title "Design and architecture of a novel preservation watch system" ;
-                     :booktitle "14th International Conference on Asia-Pacific Digital Libraries, ICADL 2012" ;
-                     :year 2012 ;
-                     :month "11.12";
-                     :doi "http://hdl.handle.net/1822/21447" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#ipres2012
-              :ipres2012 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :cb ;
-		     
-:temAutor :kd ;
-		     
-:temAutor :pp ;
-		     
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#FBR06_XATA
+:FBR06_XATA rdf:type owl:NamedIndividual ,
+                     :InProceeding ,
+                     :Publication ;
+            :temAutorRef :aab ,
+                         :jcr ,
+                         :mf ;
+            :address "Portalegre - Portugal" ;
+            :booktitle "XATA - XML: Aplica��es e Tecnologias Associadas" ;
+            :doi "http://hdl.handle.net/1822/4457" ;
+            :isbn "972-99166-2-4" ;
+            :month "02.09" ;
+            :title "CRIB : a service oriented architecture for digital preservation outsourcing" ;
+            :year 2006 .
 
-                     :temAutorRef :lf ;
-		     :temAutorRef :mf ;
-		     :temAutorRef :jcr ;
-		             
-                     :address "Toronto, Canada" ;
-                     
-                     :title "Preservation watch : what to monitor and how" ;
-                     :booktitle "iPRES 2012 - 9th International Conference on Preservation of Digital Objects" ;
-                     :year 2012 ;
-                     :month "11.01";
-                     :doi "http://hdl.handle.net/1822/20666" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#FR11e
-              :FR11e rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :rf ;
-		     :temAutorRef :jcr ;
-		             
-                     :address "Singapore" ;
-                     
-                     :title "New dimension in relational database preservation: raising the abstraction level" ;
-                     :booktitle "iPRES 2011 - 8th International Conference on Preservation of Digital Objects" ;
-                     :year 2011 ;
-                     :month "11.04";
-                     :doi "http://hdl.handle.net/1822/15859" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#FR11d
-              :FR11d rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :rf ;
-		     :temAutorRef :jcr ;
-		             
-                     :address "Berlin, Germany" ;
-                     
-                     :title "Relational Databases Conceptual Preservation" ;
-                     :booktitle "VLDL2011 - Fourth Workshop on Very Large Digital Libraries (In conjunction with the International Conference on Theory and Practice of Digital Libraries (TPDL2011))" ;
-                     :year 2011 ;
-                     :month "09.29";
-                     :doi "http://hdl.handle.net/1822/16019" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#FR11c
-              :FR11c rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :rf ;
-		     :temAutorRef :jcr ;
-		             
-                     :address "Lisboa, Portugal" ;
-                     
-                     :title "Using Ontologies to Abstract Relational Databases Conceptual Model" ;
-                     :booktitle "EPIA2011 - 15th Portuguese Conference on Artificial Intelligence" ;
-                     :year 2011 ;
-                     :month "10.10";
-                     :doi "http://hdl.handle.net/1822/16113" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#FR11b
-              :FR11b rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :rf ;
-		     :temAutorRef :jcr ;
-		             
-                     :address "Universidade Lus�ada, Vila Nova de Famalic�o, Portugal" ;
-                     
-                     :title "Preservation of Relational Databases" ;
-                     :booktitle "MSKE2011- International Conference on Managing Services in the Knowledge Economy" ;
-                     :year 2011 ;
-                     :month "07.13";
-                     :doi "http://hdl.handle.net/1822/13704" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#FR11
-              :FR11 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :rf ;
-		     :temAutorRef :jcr ;
-		             
-                     :address "ESEIG -IPP, Vila do Conde - Portugal" ;
-                     
-                     :title "Using Ontologies in Database Preservation" ;
-                     :booktitle "9th Conference on XML: Aplica��es e Tecnologias Associadas, XATA 2011" ;
-                     :year 2011 ;
-                     :month "06.01";
-                     :doi "http://hdl.handle.net/1822/13703" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#FR10
-              :FR10 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :rf ;
-		     :temAutorRef :jcr ;
-		             
-                     :address "Glasgow, UK" ;
-                     
-                     :title "Significant Properties in the Preservation of Relational Databases" ;
-                     :booktitle "Research and Advanced Technology for Digital Libraries, 14th European Conference, ECDL2010" ;
-                     :year 2010 ;
-                     :month "09.06";
-                     :doi "http://hdl.handle.net/1822/13702" ;
-                     :isbn "978-3-642-15463-8" ; .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RQR10
-              :RQR10 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :mjc ;
-		     
-:temAutor :mam ;
-		     
 
-                     :temAutorRef :jcr ;
-		             
-                     :address "Guimar�es, Portugal" ;
-                     
-                     :title "Cria��o e Aplica��o de um modelo baseado em Topic Maps � Documenta��o Educativa" ;
-                     :booktitle "10� Congresso Nacional de Bibliotec�rios, Arquivistas e Documentalistas" ;
-                     :year 2010 ;
-                     :month "04.08";
-                     :doi "http://hdl.handle.net/1822/11081" ;
-                     :isbn "978-972-9067-39-6" ; .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#FFR10
-              :FFR10 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :mf ;
-		     :temAutorRef :lmf ;
-		     :temAutorRef :jcr ;
-		             
-                     :address "Guimar�es, Portugal" ;
-                     
-                     :title "DigitArq e o novo m�dulo de interoperabilidade OAI-PMH" ;
-                     :booktitle "10� CONGRESSO NACIONAL DE BIBLIOTEC�RIOS, ARQUIVISTAS E DOCUMENTALISTAS" ;
-                     :year 2010 ;
-                     :month "04.08";
-                     :doi "http://hdl.handle.net/1822/10532" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#FR09
-              :FR09 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :rf ;
-		     
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#FBR07
+:FBR07 rdf:type owl:NamedIndividual ,
+                :Misc ,
+                :Publication ;
+       :temAutorRef :aab ,
+                    :jcr ,
+                    :mf ;
+       :doi "http://hdl.handle.net/1822/6195" ;
+       :howpublished "Apresenta��o efectuada na International Conference Open Repositories, 2, San Antonio, Texas, United States of America, 2007." ;
+       :title "CRiB : preservation services for Digital Repositories" ;
+       :year 2007 .
 
-                     :temAutorRef :jcr ;
-		             
-                     :address "Lisboa - Portugal" ;
-                     
-                     :title "Relational databases digital preservation" ;
-                     :booktitle "INFORUM : SIMP�SIO DE INFORM�TICA, Lisboa, 2009" ;
-                     :year 2009 ;
-                     :month "11.09";
-                     :doi "http://hdl.handle.net/1822/9740" ;
-                     :isbn "978-972-9348-18-1" ; .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#LRHGT08
-              :LRHGT08 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :grl ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		     :temAutorRef :jg ;
-		     :temAutorRef :rct ;
-		             
-                     :address "Lisboa, Portugal" ;
-                     
-                     :title "A Framework to specify, extract and manage Topic Maps driven by ontologies" ;
-                     :booktitle "SIGDOC'08 -- 26th ACM International Conference on Design of Communication" ;
-                     :year 2008 ;
-                     :month "09-23";
-                     :doi "http://hdl.handle.net/1822/8236" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#BKRFBR08
-              :BKRFBR08 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :mk ;
-		     
-:temAutor :ar ;
-		     
 
-                     :temAutorRef :cb ;
-		     :temAutorRef :mf ;
-		     :temAutorRef :aab ;
-		     :temAutorRef :jcr ;
-		             
-                     :address "Aarhus, Danmark" ;
-                     
-                     :title "Distributed Preservation Services: Integrating Planning and Actions" ;
-                     :booktitle "ECDL2008 - European Conference on Research and Advanced Technology for Digital Libraries" ;
-                     :year 2008 ;
-                     :month "09";
-                     :doi "http://hdl.handle.net/1822/8239" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RFFCBC08
-              :RFFCBC08 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :jcr ;
-		     :temAutorRef :mf ;
-		     :temAutorRef :lf ;
-		     :temAutorRef :rc ;
-		     :temAutorRef :fb ;
-		     :temAutorRef :lc ;
-		             
-                     :address "London, England" ;
-                     
-                     :title "RODA and Crib: A Service-Oriented Digital Repository" ;
-                     :booktitle "iPRES 2008: The Fifth International Conference on Preservation of Digital Objects" ;
-                     :year 2008 ;
-                     :month "09";
-                     :doi "http://hdl.handle.net/1822/8226" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#LMMVRH08_XATA
-              :LMMVRH08_XATA rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :mm ;
-		     
-:temAutor :hm ;
-		     
-:temAutor :jv ;
-		     
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#FBR07_IJDL
+:FBR07_IJDL rdf:type owl:NamedIndividual ,
+                     :Article ,
+                     :Publication ;
+            :temAutorRef :aab ,
+                         :jcr ,
+                         :mf ;
+            :doi "http://hdl.handle.net/1822/6648" ;
+            :issn "1432-5012 (Print) 1432-1300 (Online)" ;
+            :journal "International Journal on Digital Libraries" ;
+            :month "05" ;
+            :publisher "Springer Berlin / Heidelberg" ;
+            :title "An intelligent decision support system for digital preservation" ;
+            :year 2007 .
 
-                     :temAutorRef :grl ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "�vora - Portugal" ;
-                     
-                     :title "Generating a Semantic Network for PubMed" ;
-                     :booktitle "XATA 2008 -  XML: Aplica��es e Tecnologias Associadas (6� Confer�ncia Nacional)" ;
-                     :year 2008 ;
-                     :month "02.14";
-                     
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#FRF_XATA
-              :FRF_XATA rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :lmf ;
-		     
 
-                     :temAutorRef :jcr ;
-		     :temAutorRef :mf ;
-		             
-                     :address "�vora - Portugal" ;
-                     
-                     :title "Creating a National Federation of Archives using OAI-PMH" ;
-                     :booktitle "XATA 2008 -  XML: Aplica��es e Tecnologias Associadas (6� Confer�ncia Nacional)" ;
-                     :year 2008 ;
-                     :month "02.14";
-                     :doi "http://hdl.handle.net/1822/7821" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#LGRH07_CLEI
-              :LGRH07_CLEI rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :jg ;
-		     
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#FCRBCF07
+:FCRBCF07 rdf:type owl:NamedIndividual ,
+                   :InProceeding ,
+                   :Publication ;
+          :temAutorRef :fb ,
+                       :jcr ,
+                       :lcor ,
+                       :lf ,
+                       :mf ,
+                       :rc ;
+          :address "Ponta Delgada, A�ores, Portugal" ;
+          :booktitle "9� CONGRESSO NACIONAL DE BIBLIOTEC�RIOS, ARQUIVISTAS E DOCUMENTALISTAS" ;
+          :doi "http://hdl.handle.net/1822/6330" ;
+          :month "03.29" ;
+          :title "RODA : Reposit�rio de Objectos Digitais Aut�nticos" ;
+          :year 2007 .
 
-                     :temAutorRef :grl ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "San Jos� - Costa Rica" ;
-                     
-                     :title "Using Web Services to put Metamorphosis on the Web" ;
-                     :booktitle "XXXIII Conferencia Latinoamericana de Inform�tica (CLEI2007)" ;
-                     :year 2007 ;
-                     
-                     :doi "http://hdl.handle.net/1822/7354" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#LATRH07_CLEI
-              :LATRH07_CLEI rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :rct ;
-		     
 
-                     :temAutorRef :grl ;
-		     :temAutorRef :rpa ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "San Jos� - Costa Rica" ;
-                     
-                     :title "Implementing TMCL: XTche - a topic map schema and constraint specification language" ;
-                     :booktitle "XXXIII Conferencia Latinoamericana de Inform�tica (CLEI2007)" ;
-                     :year 2007 ;
-                     
-                     :doi "http://hdl.handle.net/1822/7364" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#LARH07_EPIA
-              :LARH07_EPIA rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :grl ;
-		     :temAutorRef :rpa ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Guimar�es - Portugal" ;
-                     
-                     :title "Topic Maps Constraint Languages: understanding and comparing" ;
-                     :booktitle "Portuguese Conference on Artificial Intelligence (EPIA2007)" ;
-                     :year 2007 ;
-                     
-                     :doi "http://hdl.handle.net/1822/7368" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#LMMFRH07_TMRA
-              :LMMFRH07_TMRA rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :htm ;
-		     
-:temAutor :mom ;
-		     
-:temAutor :pgf ;
-		     
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#FFR10
+:FFR10 rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutorRef :jcr ,
+                    :lmf ,
+                    :mf ;
+       :address "Guimar�es, Portugal" ;
+       :booktitle "10� CONGRESSO NACIONAL DE BIBLIOTEC�RIOS, ARQUIVISTAS E DOCUMENTALISTAS" ;
+       :doi "http://hdl.handle.net/1822/10532" ;
+       :month "04.08" ;
+       :title "DigitArq e o novo m�dulo de interoperabilidade OAI-PMH" ;
+       :year 2010 .
 
-                     :temAutorRef :grl ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Leipzig - Germany" ;
-                     
-                     :title "Comparing Topic Maps Constraint Specification Languages" ;
-                     :booktitle "International Conference on Topic Maps Research and Applications (TMRA2007)" ;
-                     :year 2007 ;
-                     
-                     :doi "http://hdl.handle.net/1822/7399" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#LRH06_SBSI06
-              :LRH06_SBSI06 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :grl ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Curitiba, Paran� - Brasil" ;
-                     
-                     :title "Metamorphosis: An Environment to Achieve Semantic Interoperability with Topic Maps" ;
-                     :booktitle "III Simp�sio Brasileiro de Sistemas de Informa��o" ;
-                     :year 2006 ;
-                     
-                     :doi "http://hdl.handle.net/1822/7359" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#LRH07_SEMINFO
-              :LRH07_SEMINFO rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :grl ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Torres, RS - Brasil" ;
-                     
-                     :title "Estruturando o conhecimento com a norma ISO 13250 Topic Maps" ;
-                     :booktitle "VI Semin�rio de Inform�tica - SEMINFO, 2007, Torres, RS, Brasil." ;
-                     :year 2007 ;
-                     
-                     
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RFFC07_EML
-              :RFFC07_EML rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :jcr ;
-		     :temAutorRef :mf ;
-		     :temAutorRef :lf ;
-		     :temAutorRef :rc ;
-		             
-                     :address "Montr�al - Canada" ;
-                     
-                     :title "Relational database preservation through XML modelling" ;
-                     :booktitle "Extreme Markup Languages 2007, Montr�al - Canada, August 2007." ;
-                     :year 2007 ;
-                     :month "08";
-                     :doi "http://hdl.handle.net/1822/7120" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RLH07_EML
-              :RLH07_EML rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :grl ;
-		     :temAutorRef :rpa ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Montr�al - Canada" ;
-                     
-                     :title "Topic Maps applied to PubMed" ;
-                     :booktitle "Extreme Markup Languages 2007, Montr�al - Canada, August 2007." ;
-                     :year 2007 ;
-                     :month "08";
-                     :doi "http://hdl.handle.net/1822/7330" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#LPRH07_XATA
-              :LPRH07_XATA rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :rpa ;
-		     
 
-                     :temAutorRef :grl ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Lisboa - Portugal" ;
-                     
-                     :title "Navegando na Rede Sem�ntica dos Topic Maps com o Ulisses" ;
-                     :booktitle "XATA 2007 -  XML: Aplica��es e Tecnologias Associadas (5� Confer�ncia Nacional)" ;
-                     :year 2007 ;
-                     :month "02.14";
-                     :doi "http://hdl.handle.net/1822/6482" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#LPRH07_TM
-              :LPRH07_TM rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :grl ;
-		     :temAutorRef :rpa ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Oslo - Norway" ;
-                     
-                     :title "Topic Maps Constraint Specification Languages: comparing AsTMa!, OSL, and XTche" ;
-                     :booktitle "Topic Maps 2007 -  The First International Topic Maps User Conference" ;
-                     :year 2007 ;
-                     :month "03.21";
-                     :doi "http://hdl.handle.net/1822/6474" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#FCRBCF07
-              :FCRBCF07 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :mf ;
-		     :temAutorRef :rc ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :fb ;
-		     :temAutorRef :lcor ;
-		     :temAutorRef :lf ;
-		             
-                     :address "Ponta Delgada, A�ores, Portugal" ;
-                     
-                     :title "RODA : Reposit�rio de Objectos Digitais Aut�nticos" ;
-                     :booktitle "9� CONGRESSO NACIONAL DE BIBLIOTEC�RIOS, ARQUIVISTAS E DOCUMENTALISTAS" ;
-                     :year 2007 ;
-                     :month "03.29";
-                     :doi "http://hdl.handle.net/1822/6330" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#SFRL07
-              :SFRL07 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :as ;
-		     :temAutorRef :lmf ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :mjpl ;
-		             
-                     :address "Ponta Delgada, A�ores, Portugal" ;
-                     
-                     :title "Consulta Real em Ambiente Virtual: implementa��o de uma sala de refer�ncia e leitura virtual num arquivo" ;
-                     :booktitle "9� CONGRESSO NACIONAL DE BIBLIOTEC�RIOS, ARQUIVISTAS E DOCUMENTALISTAS" ;
-                     :year 2007 ;
-                     :month "03.29";
-                     :doi "http://hdl.handle.net/1822/6432" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RFCFBC07
-              :RFCFBC07 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :rc ;
-		     
-:temAutor :lf ;
-		     
-:temAutor :fb ;
-		     
-:temAutor :lcor ;
-		     
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#FR04
+:FR04 rdf:type owl:NamedIndividual ,
+               :InProceeding ,
+               :Publication ;
+      :temAutor :mf ;
+      :temAutorRef :jcr ;
+      :address "Faculdade de Engenharia da Universidade do Porto - Porto" ;
+      :booktitle "XML: Aplica��es e Tecnologias Associadas (XATA 2004)" ;
+      :doi "http://hdl.handle.net/1822/614" ;
+      :isbn "972-99166-0-8" ;
+      :month "02.12" ;
+      :title "Aquisi��o e Armazenamento de Metainforma��o no Contexto de um Arquivo" ;
+      :year 2004 .
 
-                     :temAutorRef :jcr ;
-		     :temAutorRef :mf ;
-		             
-                     :address "Lisboa, Portugal" ;
-                     
-                     :title "XML e preserva��o digital" ;
-                     :booktitle "XATA2007 : XML : aplica��es e tecnologias associadas : actas da Confer�ncia Nacional" ;
-                     :year 2007 ;
-                     :month "02.15";
-                     :doi "http://hdl.handle.net/1822/6224" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RFFLS06
-              :RFFLS06 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :mjpl ;
-		     
-:temAutor :as ;
-		     
 
-                     :temAutorRef :jcr ;
-		     :temAutorRef :mf ;
-		     :temAutorRef :lmf ;
-		             
-                     :address "Seixal, Portugal" ;
-                     
-                     :title "Digitarq2 : nova arquitectura aplicacional para gest�o de Arquivos Definitivos" ;
-                     :booktitle "2� Confer�ncia Internacional de Arquivos Empresariais" ;
-                     :year 2006 ;
-                     :month "11.27";
-                     :doi "http://hdl.handle.net/1822/6038" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RS2003
-              :RS2003 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :jls ;
-		     
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#FR04_capsi
+:FR04_capsi rdf:type owl:NamedIndividual ,
+                     :InProceeding ,
+                     :Publication ;
+            :temAutorRef :jcr ,
+                         :mf ;
+            :address "Instituto Superior T�cnico, Lisboa, Portugal" ;
+            :booktitle "5� Confer�ncia da APSI - Associa��o Portuguesa dos Sistemas de Informa��o" ;
+            :doi "http://hdl.handle.net/1822/718" ;
+            :month "11.03" ;
+            :title "DigitArq: Creating a Historical Digital Archive" ;
+            :year 2004 .
 
-                     :temAutorRef :jcr ;
-		             
-                     :address "Universidade do Minho - Guimar�es - Portugal" ;
-                     
-                     :title "Electronic Publishing of ADB editions" ;
-                     :booktitle "Electronic Publishing 2003: From information to knowledge" ;
-                     :year 2003 ;
-                     :month "06.25";
-                     :doi "http://hdl.handle.net/1822/552" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RLH2003
-              :RLH2003 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :grl ;
-		     
 
-                     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Universidade do Minho - Guimar�es - Portugal" ;
-                     
-                     :title "Ontology driven Websites - Metamorphosis: a framework to specify and manage ontology driven websites" ;
-                     :booktitle "Electronic Publishing 2003: From information to knowledge" ;
-                     :year 2003 ;
-                     :month "06.25";
-                     :doi "http://hdl.handle.net/1822/553" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#Ram01
-              :Ram01 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :jcr ;
-		             
-                     :address "Berlin - Germany" ;
-                     
-                     :title "Constraining Content: specification and processing" ;
-                     :booktitle "XML Europe'01" ;
-                     :year 2001 ;
-                     :month "05";
-                     :doi "http://hdl.handle.net/1822/623" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#Ram99
-              :Ram99 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :jcr ;
-		             
-                     :address "London - England" ;
-                     
-                     :title "Recovering Old Paper Historical Documents Through SGML/XML Modelling" ;
-                     :booktitle "Digital Resources for the Humanities - DRH99" ;
-                     :year 1999 ;
-                     
-                     
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RH99
-              :RH99 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :jcr ;
-		     :temAutorRef :jj ;
-		             
-                     :address "Granada - Espanha" ;
-                     
-                     :title "XML::DT - a Perl Down Translation Module" ;
-                     :booktitle "XML Europe'99" ;
-                     :year 1999 ;
-                     
-                     :doi "http://hdl.handle.net/1822/632" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RLH98
-              :RLH98 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :arl ;
-		     
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#FR04b
+:FR04b rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutorRef :jcr ,
+                    :mf ;
+       :address "Department of Information and Documentation Science at the University of Brasilia, in Brazil" ;
+       :booktitle "Electronic Publishing 2004 - Building Digital Bridges: linking cultures, commerce and science" ;
+       :doi "http://hdl.handle.net/1822/615" ;
+       :isbn "85-88130-02-05" ;
+       :month "06.23-26" ;
+       :title "DIGITARQ - CREATING AND MANAGING A DIGITAL ARCHIVE" ;
+       :year 2004 .
 
-                     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Chicago - USA" ;
-                     
-                     :title "Generating SGML specific editors: from DTDs to Attribute Grammars" ;
-                     :booktitle "Markup Technologies'98" ;
-                     :year 1998 ;
-                     :month "12";
-                     :doi "http://hdl.handle.net/1822/637" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RHb98
-              :RHb98 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Paris - France" ;
-                     
-                     :title "Beyond DTDs: Constraining Data Content" ;
-                     :booktitle "SGML Europe 98 Conference" ;
-                     :year 1998 ;
-                     :month "05";
-                     :doi "http://hdl.handle.net/1822/636" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RHHRAF98
-              :RHHRAF98 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :mrh ;
-		     
-:temAutor :jlf ;
-		     
 
-                     :temAutorRef :jgr ;
-		     :temAutorRef :prh ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :jj ;
-		             
-                     :address "Toronto, Canada" ;
-                     
-                     :title "Adapting Museum Structures for the Web: No Changes Needed!" ;
-                     :booktitle "Museums and the Web: An International Conference" ;
-                     :year 1998 ;
-                     :month "04.22";
-                     :doi "http://hdl.handle.net/1822/624" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#LRH97
-              :LRH97 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :arl ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Campinas-SP -- Brasil" ;
-                     
-                     :title "INES, an Environment for Structured Editions of SGML Documents" ;
-                     :booktitle "II Brasilian Symposium on Programming Languages (SBLP'97)" ;
-                     :year 1997 ;
-                     :month "09";
-                     :doi "http://hdl.handle.net/1822/616" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RAH96
-              :RAH96 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :jcr ;
-		     :temAutorRef :jj ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Boston - USA" ;
-                     
-                     :title "Document Semantics: two approaches" ;
-                     :booktitle "SGML96" ;
-                     :year 1996 ;
-                     :month "12";
-                     :doi "http://hdl.handle.net/1822/622" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#JLRH02
-              :JLRH02 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :mhj ;
-		     
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#FR09
+:FR09 rdf:type owl:NamedIndividual ,
+               :InProceeding ,
+               :Publication ;
+      :temAutor :rf ;
+      :temAutorRef :jcr ;
+      :address "Lisboa - Portugal" ;
+      :booktitle "INFORUM : SIMP�SIO DE INFORM�TICA, Lisboa, 2009" ;
+      :doi "http://hdl.handle.net/1822/9740" ;
+      :isbn "978-972-9348-18-1" ;
+      :month "11.09" ;
+      :title "Relational databases digital preservation" ;
+      :year 2009 .
 
-                     :temAutorRef :grl ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Montevideo, Uruguai," ;
-                     
-                     :title "XCSL: XML Constraint Specification Language" ;
-                     :booktitle "CLEI'02" ;
-                     :year 2002 ;
-                     :month "11";
-                     :doi "http://hdl.handle.net/1822/612" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#JLRHb02
-              :JLRHb02 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :mhj ;
-		     :temAutorRef :grl ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Rio de Janeiro - Brasil" ;
-                     
-                     :title "Bidirectional Conversion between XML Documents and Relational Data Bases" ;
-                     :booktitle "7th International Conference on CSCW in  Design" ;
-                     :year 2002 ;
-                     :month "09.25";
-                     :doi "http://hdl.handle.net/1822/601" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#JHR00
-              :JHR00 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :mhj ;
-		     :temAutorRef :prh ;
-		     :temAutorRef :jcr ;
-		             
-                     :address "Instituto de L�gica, Lenguaje e Informaci�n, Universidad de Sevilla, Espanha" ;
-                     
-                     :title "XML and Semantic Validation" ;
-                     :booktitle "Logic, Language and Information: Proceedings of the First Workshop on Logic and Language" ;
-                     :year 2000 ;
-                     :month "11.29";
-                     :doi "http://hdl.handle.net/1822/597" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#JLRHc02
-              :JLRHc02 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :mhj ;
-		     :temAutorRef :grl ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Barcelona - Espanha" ;
-                     
-                     :title "Constraint Specification Languages: comparing XCSL, Schematron and XML-Schema" ;
-                     :booktitle "XML Europe'02" ;
-                     :year 2002 ;
-                     :month "05.20";
-                     :doi "http://hdl.handle.net/1822/619" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RH94
-              :RH94 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Universidade do Minho" ;
-                     
-                     :title "Uma experi�ncia de utiliza��o da Internet na gest�o pedag�gica e sua formaliza��o" ;
-                     :booktitle "I Confer�ncia Nacional WWW,    Informa��o Multim�dia na Internet" ;
-                     :year 1995 ;
-                     :month "07";
-                     
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RAH95
-              :RAH95 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :jcr ;
-		     :temAutorRef :jj ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Twente - Holanda" ;
-                     
-                     :title "DAVID, Algebraic Specification of Documents" ;
-                     :booktitle "Algebraic Methods in Language Processing" ;
-                     :year 1995 ;
-                     :month "12";
-                     :doi "http://hdl.handle.net/1822/618" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#Ram96
-              :Ram96 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :jcr ;
-		             
-                     :address "Universidade do Minho" ;
-                     
-                     :title "DSSSL: basic topics" ;
-                     :booktitle "Workshop: Document    Processing and SGML" ;
-                     :year 1996 ;
-                     :month "09";
-                     
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RRAH97
-              :RRAH97 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :jcr ;
-		     :temAutorRef :jgr ;
-		     :temAutorRef :jj ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Washinton - USA" ;
-                     
-                     :title "SGML Documents: Where Does Quality Go?" ;
-                     :booktitle "SGML/XML'97" ;
-                     :year 1997 ;
-                     :month "12.08";
-                     :doi "http://hdl.handle.net/1822/617" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#LRH03
-              :LRH03 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :grl ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Braga - Portugal" ;
-                     
-                     :title "XML Topic Map Builder: Specification and Generation" ;
-                     :booktitle "XATA 2003 - XML, Aplica��es e Tecnologias Associadas" ;
-                     :year 2003 ;
-                     :month "02.13";
-                     :doi "http://hdl.handle.net/1822/620" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#Ram03
-              :Ram03 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :jcr ;
-		             
-                     :address "Braga - Portugal" ;
-                     
-                     :title "O XML nos curriculae das licenciaturas em inform�tica" ;
-                     :booktitle "XATA 2003 - XML, Aplica��es e Tecnologias Associadas" ;
-                     :year 2003 ;
-                     :month "02.13";
-                     :doi "http://hdl.handle.net/1822/554" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#LRH03b
-              :LRH03b rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :grl ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "La Paz, Bol�via" ;
-                     
-                     :title "TM-Builder: Um Construtor de Ontologias baseado em Topic Maps" ;
-                     :booktitle "CLEI'03" ;
-                     :year 2003 ;
-                     :month "09.29";
-                     :doi "http://hdl.handle.net/1822/555" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#LRH03c
-              :LRH03c rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :grl ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "ISEP, Porto, Portugal" ;
-                     
-                     :title "Gera��o autom�tica de interfaces Web para sistemas de informa��o: Metamorphosis" ;
-                     :booktitle "COOPMedia 2003" ;
-                     :year 2003 ;
-                     :month "10.08";
-                     :doi "http://hdl.handle.net/1822/556" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#SMR03
-              :SMR03 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :des ;
-		     
-:temAutor :mcm ;
-		     
 
-                     :temAutorRef :jcr ;
-		             
-                     :address "Vila Verde - Portugal" ;
-                     
-                     :title "Xexam: uma linguagem de suporte para exames online (e-learning)" ;
-                     :booktitle "XATA2003 - XML: Aplica��es e Tecnologias Associadas" ;
-                     :year 2003 ;
-                     :month "02.13-14";
-                     :doi "http://hdl.handle.net/1822/557" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#JRH03
-              :JRH03 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :mhj ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Vila Verde - Portugal" ;
-                     
-                     :title "XML Templates for Constraints (XTC), Um N�vel de Abstrac��o para Linguagens de Especifica��o de Restri��es" ;
-                     :booktitle "XATA2003 - XML: Aplica��es e Tecnologias Associadas" ;
-                     :year 2003 ;
-                     :month "02.13-14";
-                     :doi "http://hdl.handle.net/1822/4911" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#VECPAR93
-              :VECPAR93 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :hs ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :jmf ;
-		     :temAutorRef :ajp ;
-		             
-                     
-                     
-                     :title "A Heterogeneous Computer Vision Architecture: Implementation Issues" ;
-                     :booktitle "1st International Meeting on Vector and Paralell Processing" ;
-                     :year 1993 ;
-                     
-                     
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RH98b
-              :RH98b rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Guimar�es - Portugal" ;
-                     
-                     :title "Qualidade na Publica��o Electr�nica: como control�-la?" ;
-                     :booktitle "Quatic 98: III Encontro Nacional para a Qualidade nas Tecnologias da Informa��o e Comunica��o" ;
-                     :year 1998 ;
-                     
-                     :doi "http://hdl.handle.net/1822/621" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RH98c
-              :RH98c rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Porto - Portugal" ;
-                     
-                     :title "Informatics and Archives: a present needed symbiosis" ;
-                     :booktitle "Workshop internacional Informa��o e documentos de arquivo em ambientes digitais" ;
-                     :year 1998 ;
-                     
-                     
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RH98d
-              :RH98d rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Loures - Portugal " ;
-                     
-                     :title "Os desafios colocados pela informa��o estruturada no contexto dos arquivos: o arquivo distrital de Braga" ;
-                     :booktitle "IX encontro nacional de Museus e Autarquias" ;
-                     :year 1998 ;
-                     
-                     
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RLH03b
-              :RLH03b rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :jcr ;
-		     :temAutorRef :grl ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Badajoz - Espanha" ;
-                     
-                     :title "Adrian: a platform for E-Learning Content Prodution" ;
-                     :booktitle "Second International Conference on Multimedia and ICTs in Education" ;
-                     :year 2003 ;
-                     :month "12.04";
-                     :doi "http://hdl.handle.net/1822/558" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#LR04
-              :LR04 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :cajo ;
-		     
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#FR10
+:FR10 rdf:type owl:NamedIndividual ,
+               :InProceeding ,
+               :Publication ;
+      :temAutorRef :jcr ,
+                   :rf ;
+      :address "Glasgow, UK" ;
+      :booktitle "Research and Advanced Technology for Digital Libraries, 14th European Conference, ECDL2010" ;
+      :doi "http://hdl.handle.net/1822/13702" ;
+      :isbn "978-3-642-15463-8" ;
+      :month "09.06" ;
+      :title "Significant Properties in the Preservation of Relational Databases" ;
+      :year 2010 .
 
-                     :temAutorRef :jcr ;
-		             
-                     :address "Faculdade de Engenharia da Universidade do Porto - Porto" ;
-                     
-                     :title "Web Services: Metodologias de Desenvolvimento" ;
-                     :booktitle "XML: Aplica��es e Tecnologias Associadas (XATA 2004)" ;
-                     :year 2004 ;
-                     :month "02.12";
-                     :doi "http://hdl.handle.net/1822/559" ;
-                     :isbn "972-99166-0-8" ; .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#FR04
-              :FR04 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :mf ;
-		     
 
-                     :temAutorRef :jcr ;
-		             
-                     :address "Faculdade de Engenharia da Universidade do Porto - Porto" ;
-                     
-                     :title "Aquisi��o e Armazenamento de Metainforma��o no Contexto de um Arquivo" ;
-                     :booktitle "XML: Aplica��es e Tecnologias Associadas (XATA 2004)" ;
-                     :year 2004 ;
-                     :month "02.12";
-                     :doi "http://hdl.handle.net/1822/614" ;
-                     :isbn "972-99166-0-8" ; .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#LRH04
-              :LRH04 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :grl ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Faculdade de Engenharia da Universidade do Porto - Porto" ;
-                     
-                     :title "Um Extractor de Topic Maps a partir de Recursos Heterog�neos de Informa��o" ;
-                     :booktitle "XML: Aplica��es e Tecnologias Associadas (XATA 2004)" ;
-                     :year 2004 ;
-                     :month "02.12";
-                     :doi "http://hdl.handle.net/1822/613" ;
-                     :isbn "972-99166-0-8" ; .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RTFR04
-              :RTFR04 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :pt ;
-		     
-:temAutor :vr ;
-		     
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#FR11
+:FR11 rdf:type owl:NamedIndividual ,
+               :InProceeding ,
+               :Publication ;
+      :temAutorRef :jcr ,
+                   :rf ;
+      :address "ESEIG -IPP, Vila do Conde - Portugal" ;
+      :booktitle "9th Conference on XML: Aplica��es e Tecnologias Associadas, XATA 2011" ;
+      :doi "http://hdl.handle.net/1822/13703" ;
+      :month "06.01" ;
+      :title "Using Ontologies in Database Preservation" ;
+      :year 2011 .
 
-                     :temAutorRef :jcr ;
-		     :temAutorRef :rf ;
-		             
-                     :address "Faculdade de Engenharia da Universidade do Porto - Porto" ;
-                     
-                     :title "Gerador de Web Services para cadeias de transforma��es de documentos XML" ;
-                     :booktitle "XML: Aplica��es e Tecnologias Associadas (XATA 2004)" ;
-                     :year 2004 ;
-                     :month "02.12";
-                     :doi "http://hdl.handle.net/1822/561" ;
-                     :isbn "972-99166-0-8" ; .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#MRH04
-              :MRH04 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :ram ;
-		     
 
-                     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Faculdade de Engenharia da Universidade do Porto - Porto" ;
-                     
-                     :title "Compara��o de Linguagens para descri��o de Interfaces baseadas em XML" ;
-                     :booktitle "XML: Aplica��es e Tecnologias Associadas (XATA 2004)" ;
-                     :year 2004 ;
-                     :month "02.12";
-                     :doi "http://hdl.handle.net/1822/562" ;
-                     :isbn "972-99166-0-8" ; .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#FR04b
-              :FR04b rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :jcr ;
-		     :temAutorRef :mf ;
-		             
-                     :address "Department of Information and Documentation Science at the University of Brasilia, in Brazil" ;
-                     
-                     :title "DIGITARQ - CREATING AND MANAGING A DIGITAL ARCHIVE" ;
-                     :booktitle "Electronic Publishing 2004 - Building Digital Bridges: linking cultures, commerce and science" ;
-                     :year 2004 ;
-                     :month "06.23-26";
-                     :doi "http://hdl.handle.net/1822/615" ;
-                     :isbn "85-88130-02-05" ; .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RLH04
-              :RLH04 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :jcr ;
-		     :temAutorRef :grl ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Department of Information and Documentation Science at the University of Brasilia, in Brazil" ;
-                     
-                     :title "Adrian - E-Learning Content Production (creating online exams)" ;
-                     :booktitle "Electronic Publishing 2004 - Building Digital Bridges: linking cultures, commerce and science" ;
-                     :year 2004 ;
-                     :month "06.23-26";
-                     :doi "http://hdl.handle.net/1822/608" ;
-                     :isbn "85-88130-02-05" ; .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#LSRH04
-              :LSRH04 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :ws ;
-		     
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#FR11b
+:FR11b rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutorRef :jcr ,
+                    :rf ;
+       :address "Universidade Lus�ada, Vila Nova de Famalic�o, Portugal" ;
+       :booktitle "MSKE2011- International Conference on Managing Services in the Knowledge Economy" ;
+       :doi "http://hdl.handle.net/1822/13704" ;
+       :month "07.13" ;
+       :title "Preservation of Relational Databases" ;
+       :year 2011 .
 
-                     :temAutorRef :grl ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Porto - Portugal" ;
-                     
-                     :title "Using the Ontology Paradigm to integrate Information Systems" ;
-                     :booktitle "International Conference on Knowledge Engineering and Decision Support" ;
-                     :year 2004 ;
-                     :month "07.21-23";
-                     :doi "http://hdl.handle.net/1822/584" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#LRH04_Clei
-              :LRH04_Clei rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :grl ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Sociedad Peruana de Computaci�n, Peru" ;
-                     
-                     :title "Extra��o de Topic Maps no Oveia: Especifica��o e Processamento" ;
-                     :booktitle "30ma Conferencia Latinoamericana de Inform�tica (CLEI2004)" ;
-                     :year 2004 ;
-                     :month "Sept.";
-                     :doi "http://hdl.handle.net/1822/594" ;
-                     :isbn "9972-9876-2-0" ; .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RHL04_eLes
-              :RHL04_eLes rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		     :temAutorRef :grl ;
-		             
-                     :address "Universidade de Aveiro, Portugal" ;
-                     
-                     :title "ADRIAN: Sistema de Suporte � Produ��o de Conte�dos" ;
-                     :booktitle "Confer�ncia eLes'04 - E-Learning no Ensino Superior" ;
-                     :year 2004 ;
-                     :month "Outubro";
-                     :doi "http://hdl.handle.net/1822/733" ;
-                     :isbn "972-789-134-9" ; .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#FR04_capsi
-              :FR04_capsi rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :mf ;
-		     :temAutorRef :jcr ;
-		             
-                     :address "Instituto Superior T�cnico, Lisboa, Portugal" ;
-                     
-                     :title "DigitArq: Creating a Historical Digital Archive" ;
-                     :booktitle "5� Confer�ncia da APSI - Associa��o Portuguesa dos Sistemas de Informa��o" ;
-                     :year 2004 ;
-                     :month "11.03";
-                     :doi "http://hdl.handle.net/1822/718" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#LRH04_XMLw
-              :LRH04_XMLw rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :grl ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Washington, USA" ;
-                     
-                     :title "XTche - A Language for Topic Maps Schema and Constraints" ;
-                     :booktitle "XML Conference and Exhibition 2004 Proceedings" ;
-                     :year 2004 ;
-                     :month "12";
-                     :doi "http://hdl.handle.net/1822/681" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#Ram05
-              :Ram05 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :jcr ;
-		             
-                     :address "Braga" ;
-                     
-                     :title "Document Composer: uma aplica��o XML para extrac��o de informa��o de reposit�rios XML" ;
-                     :booktitle "XML: Aplica��es e Tecnologias Associadas (XATA 2005)" ;
-                     :year 2005 ;
-                     :month "02.10";
-                     :doi "http://hdl.handle.net/1822/884" ;
-                     :isbn "972-99166-1-6" ; .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#LRH05
-              :LRH05 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :grl ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Braga" ;
-                     
-                     :title "Obtendo Interoperabilidade Sem�ntica em Sistemas Heterog�neos de Informa��o com Metamorphosis" ;
-                     :booktitle "XML: Aplica��es e Tecnologias Associadas (XATA 2005)" ;
-                     :year 2005 ;
-                     :month "02.10";
-                     :doi "http://hdl.handle.net/1822/1020" ;
-                     :isbn "972-99166-1-6" ; .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#LRH05b
-              :LRH05b rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :grl ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Braga" ;
-                     
-                     :title "Constraining XML Topic Maps with XTche" ;
-                     :booktitle "XML: Aplica��es e Tecnologias Associadas (XATA 2005)" ;
-                     :year 2005 ;
-                     :month "02.10";
-                     :doi "http://hdl.handle.net/1822/994" ;
-                     :isbn "972-99166-1-6" ; .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#LRH04_WWS
-              :LRH04_WWS rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :grl ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Bras�lia, Brasil" ;
-                     
-                     :title "Achieving Semantic Interoperability in Heterogeneous Information Systems with Topic Maps" ;
-                     :booktitle "I  Workshop de Web Sem�ntica (WWS2004)" ;
-                     :year 2004 ;
-                     :month "10.22";
-                     
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RLH05
-              :RLH05 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :jcr ;
-		     :temAutorRef :grl ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Montr�al - Canada" ;
-                     
-                     :title "Constraining Topic Maps: A TMCL declarative implementation" ;
-                     :booktitle "Extreme Markup Languages 2005, Montr�al - Canada, 1-5 August 2005." ;
-                     :year 2005 ;
-                     :month "08.04";
-                     :doi "http://hdl.handle.net/1822/3117" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RLH05b
-              :RLH05b rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :jcr ;
-		     :temAutorRef :grl ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Leipzig - Germany" ;
-                     
-                     :title "Metamorphosis - a Topic Maps based Environment to Handle Heterogeneous Information Resources" ;
-                     :booktitle "TMRA'05 - International Workshop on  Topic Map Research and Applications " ;
-                     :year 2005 ;
-                     :month "10.06";
-                     
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#FBR05_CAPSI
-              :FBR05_CAPSI rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :aab ;
-		     
 
-                     :temAutorRef :mf ;
-		     :temAutorRef :jcr ;
-		             
-                     :address "Bragan�a - Portugal" ;
-                     
-                     :title "Avalia��o Autom�tica de Migra��o em Redes Distribu�das de Conversores" ;
-                     :booktitle "6� Confer�ncia da Associa��o Portuguesa de Sistemas de Informa��o" ;
-                     :year 2005 ;
-                     :month "10.26";
-                     :doi "http://hdl.handle.net/1822/3616" ;
-                      .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#LRH05_CLEI
-              :LRH05_CLEI rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :grl ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Santiago de Cali - Colombia" ;
-                     
-                     :title "Ulisses: Um Navegador Conceptual para Topic Maps" ;
-                     :booktitle "XXXI Confer�ncia Latinoamericana de Inform�tica" ;
-                     :year 2005 ;
-                     :month "10.10";
-                     :doi "http://hdl.handle.net/1822/3532" ;
-                     :isbn "958-670-422-X" ; .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#FBR06_XATA
-              :FBR06_XATA rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :mf ;
-		     :temAutorRef :aab ;
-		     :temAutorRef :jcr ;
-		             
-                     :address "Portalegre - Portugal" ;
-                     
-                     :title "CRIB : a service oriented architecture for digital preservation outsourcing" ;
-                     :booktitle "XATA - XML: Aplica��es e Tecnologias Associadas" ;
-                     :year 2006 ;
-                     :month "02.09";
-                     :doi "http://hdl.handle.net/1822/4457" ;
-                     :isbn "972-99166-2-4" ; .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RD06_XATA
-              :RD06_XATA rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     :temAutor :migaldo ;
-		     
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#FR11c
+:FR11c rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutorRef :jcr ,
+                    :rf ;
+       :address "Lisboa, Portugal" ;
+       :booktitle "EPIA2011 - 15th Portuguese Conference on Artificial Intelligence" ;
+       :doi "http://hdl.handle.net/1822/16113" ;
+       :month "10.10" ;
+       :title "Using Ontologies to Abstract Relational Databases Conceptual Model" ;
+       :year 2011 .
 
-                     :temAutorRef :jcr ;
-		             
-                     :address "Portalegre - Portugal" ;
-                     
-                     :title "Especifica��o e Gera��o Autom�tica de Navegadores para Redes Sem�nticas Baseados em Interfaces Web" ;
-                     :booktitle "XATA - XML: Aplica��es e Tecnologias Associadas" ;
-                     :year 2006 ;
-                     :month "02.09";
-                     :doi "http://hdl.handle.net/1822/4576" ;
-                     :isbn "972-99166-2-4" ; .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#LRH06_XATA
-              :LRH06_XATA rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InProceeding ;
-                     
-                     :temAutorRef :grl ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     :address "Portalegre - Portugal" ;
-                     
-                     :title "Topic Maps Aplicados ao Sistema de Informa��o do Museu da Emigra��o" ;
-                     :booktitle "XATA - XML: Aplica��es e Tecnologias Associadas" ;
-                     :year 2006 ;
-                     :month "02.09";
-                     :doi "http://hdl.handle.net/1822/4910" ;
-                     :isbn "972-99166-2-4" ; .### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RLA08
-              :RLA08 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :Proceeding ;
-                     :editadoPor :sa ;
-		     
 
-                     :temEditorRef :jcr ;
-		     :temEditorRef :jcl ;
-		             
-                     :address "Departamento de Inform�tica da Universidade de �vora, �vora - Portugal" ;
-                     
-                     :title "XATA2008 (6� Confer�ncia Nacional) - XML: Aplica��es e Tecnologias Associadas" ;
-                     
-                     :year 2008 ;
-                     :month "02.14" ;
-                     :doi "http://hdl.handle.net/1822/7708" ;
-                     :isbn "978-972-99166-5-6" ; .
-            ### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RLC07
-              :RLC07 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :Proceeding ;
-                     :editadoPor :lc ;
-		     
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#FR11d
+:FR11d rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutorRef :jcr ,
+                    :rf ;
+       :address "Berlin, Germany" ;
+       :booktitle "VLDL2011 - Fourth Workshop on Very Large Digital Libraries (In conjunction with the International Conference on Theory and Practice of Digital Libraries (TPDL2011))" ;
+       :doi "http://hdl.handle.net/1822/16019" ;
+       :month "09.29" ;
+       :title "Relational Databases Conceptual Preservation" ;
+       :year 2011 .
 
-                     :temEditorRef :jcr ;
-		     :temEditorRef :jcl ;
-		             
-                     :address "Faculdade de Ci�ncias - Universidade de Lisboa, Lisboa - Portugal" ;
-                     
-                     :title "XATA2007 (5� Confer�ncia Nacional) - XML: Aplica��es e Tecnologias Associadas" ;
-                     
-                     :year 2007 ;
-                     :month "02.14-15" ;
-                     :doi "http://hdl.handle.net/1822/6234" ;
-                     :isbn "978-972-99166-4-9" ; .
-            ### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RLS06
-              :RLS06 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :Proceeding ;
-                     
-                     :temEditorRef :jcr ;
-		     :temEditorRef :jcl ;
-		     :temEditorRef :albie ;
-		             
-                     :address "Instituto Polit�cnico de Portalegre, Portalegre - Portugal" ;
-                     
-                     :title "XATA2006 (4� Confer�ncia Nacional) - XML: Aplica��es e Tecnologias Associadas" ;
-                     
-                     :year 2006 ;
-                     :month "02.09-10" ;
-                     :doi "http://hdl.handle.net/1822/4744" ;
-                     :isbn "972-99166-2-4" ; .
-            ### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RHLA03
-              :RHLA03 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :Proceeding ;
-                     :editadoPor :gva ;
-		     
 
-                     :temEditorRef :jcr ;
-		     :temEditorRef :prh ;
-		     :temEditorRef :grl ;
-		             
-                     :address "Vila Verde - Portugal" ;
-                     
-                     :title "XATA2003 - XML: Aplica��es e Tecnologias Associadas" ;
-                     
-                     :year 2003 ;
-                     :month "02.13-14" ;
-                     :doi "http://hdl.handle.net/1822/607" ;
-                      .
-            ### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RS04
-              :RS04 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :Proceeding ;
-                     :editadoPor :albie ;
-		     
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#FR11e
+:FR11e rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutorRef :jcr ,
+                    :rf ;
+       :address "Singapore" ;
+       :booktitle "iPRES 2011 - 8th International Conference on Preservation of Digital Objects" ;
+       :doi "http://hdl.handle.net/1822/15859" ;
+       :month "11.04" ;
+       :title "New dimension in relational database preservation: raising the abstraction level" ;
+       :year 2011 .
 
-                     :temEditorRef :jcr ;
-		             
-                     :address "Faculdade de Engenharia do Porto - Portugal" ;
-                     
-                     :title "XATA2004 (1� Confer�ncia Nacional) - XML: Aplica��es e Tecnologias Associadas" ;
-                     
-                     :year 2004 ;
-                     :month "02.12-13" ;
-                     :doi "http://hdl.handle.net/1822/602" ;
-                     :isbn "972-99166-0-8" ; .
-            ### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RSL05
-              :RSL05 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :Proceeding ;
-                     :editadoPor :jcl ;
-		     
 
-                     :temEditorRef :jcr ;
-		     :temEditorRef :albie ;
-		             
-                     :address "Casa da Torre, Vila Verde - Portugal" ;
-                     
-                     :title "XATA2005 (3� Confer�ncia Nacional) - XML: Aplica��es e Tecnologias Associadas" ;
-                     
-                     :year 2005 ;
-                     :month "02.10-11" ;
-                     :doi "http://hdl.handle.net/1822/865" ;
-                     :isbn "972-99166-1-6" ; .
-            ### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#GARH09
-              :GARH09 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :Article ;
-                     
-                     :temAutorRef :grl ;
-		     :temAutorRef :rpa ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     
-                     :publisher "Inderscience" ;
-                     :title "Topic maps constraint languages : understanding and comparing" ;
-                     
-                     :year 2009 ;
-                     
-                     :doi "http://hdl.handle.net/1822/9741" ;
-                     
-                     
-                     :journal "International Journal of Reasoning-based Intelligent Systems" ;
-                     
-                     
-                     
-                     :issn "1755-0556. 1:3-4 (2009) 173 - 181" ; .
-            ### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#FBR07_IJDL
-              :FBR07_IJDL rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :Article ;
-                     
-                     :temAutorRef :mf ;
-		     :temAutorRef :aab ;
-		     :temAutorRef :jcr ;
-		             
-                     
-                     :publisher "Springer Berlin / Heidelberg" ;
-                     :title "An intelligent decision support system for digital preservation" ;
-                     
-                     :year 2007 ;
-                     :month "05" ;
-                     :doi "http://hdl.handle.net/1822/6648" ;
-                     
-                     
-                     :journal "International Journal on Digital Libraries" ;
-                     
-                     
-                     
-                     :issn "1432-5012 (Print) 1432-1300 (Online)" ; .
-            ### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#FBR06_Ariadne
-              :FBR06_Ariadne rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :Article ;
-                     
-                     :temAutorRef :mf ;
-		     :temAutorRef :aab ;
-		     :temAutorRef :jcr ;
-		             
-                     
-                     
-                     :title "A foundation for automatic digital preservation" ;
-                     
-                     :year 2006 ;
-                     :month "July" ;
-                     :doi "http://hdl.handle.net/1822/5571" ;
-                     
-                     
-                     :journal "Ariadne" ;
-                     :number 48 ;
-                     
-                     
-                     :issn "1361-3200" ; .
-            ### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RAH1998
-              :RAH1998 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :Article ;
-                     :temAutor :jj ;
-		     
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#FRF_XATA
+:FRF_XATA rdf:type owl:NamedIndividual ,
+                   :InProceeding ,
+                   :Publication ;
+          :temAutor :lmf ;
+          :temAutorRef :jcr ,
+                       :mf ;
+          :address "�vora - Portugal" ;
+          :booktitle "XATA 2008 -  XML: Aplica��es e Tecnologias Associadas (6� Confer�ncia Nacional)" ;
+          :doi "http://hdl.handle.net/1822/7821" ;
+          :month "02.14" ;
+          :title "Creating a National Federation of Archives using OAI-PMH" ;
+          :year 2008 .
 
-                     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     
-                     
-                     :title "Algebraic Specification of Documents" ;
-                     
-                     :year 1998 ;
-                     :month "06" ;
-                     
-                     
-                     
-                     :journal "Theoretical Computer Science journal, volume 199" ;
-                     
-                     :volume "Elsevier" ;
-                     
-                      .
-            ### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RARH98
-              :RARH98 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :Article ;
-                     :temAutor :jgr ;
-		     
 
-                     :temAutorRef :jcr ;
-		     :temAutorRef :jj ;
-		     :temAutorRef :prh ;
-		             
-                     
-                     
-                     :title "SGML Documents: Where does quality go?" ;
-                     
-                     :year 1999 ;
-                     :month "01" ;
-                     :doi "http://hdl.handle.net/1822/644" ;
-                     
-                     
-                     :journal "Markup Languages: theory and practice " ;
-                     
-                     :volume "journal, num. 1 vol. 1, MIT Press" ;
-                     
-                     :issn "1099-6621" ; .
-            ### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RH98
-              :RH98 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :Article ;
-                     
-                     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     
-                     
-                     :title "Qualidade na Publica��o Electr�nica: como control�-la?" ;
-                     
-                     :year 1998 ;
-                     
-                     
-                     
-                     
-                     :journal "Sistemas de Informa��o" ;
-                     
-                     :volume "journal, num. 9, pg 69-83, Associa��o Portuguesa de Sistemas de Informa��o" ;
-                     
-                      .
-            ### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RLH03
-              :RLH03 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :Article ;
-                     
-                     :temAutorRef :jcr ;
-		     :temAutorRef :grl ;
-		     :temAutorRef :prh ;
-		             
-                     
-                     
-                     :title "Ontology driven websites with Topic Maps" ;
-                     
-                     :year 2003 ;
-                     :month "07.15" ;
-                     
-                     :deliverables "http://www.di.uminho.pt/~jcr/XML/publicacoes/artigos/2003/icwe.pdf" ;
-                     
-                     :journal "III International Conference on Web Engineering (ICWE)" ;
-                     
-                     :volume "Oviedo - Espanha" ;
-                     
-                      .
-            ### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#JLRH03
-              :JLRH03 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :Article ;
-                     
-                     :temAutorRef :mhj ;
-		     :temAutorRef :grl ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     
-                     
-                     :title "XCSL: XML Constraint Specification Language" ;
-                     
-                     :year 2003 ;
-                     
-                     
-                     
-                     
-                     :journal "CLEI Electronic Journal,  ISSN 0717-5000. 2003. " ;
-                     
-                     :volume "Best papers of XXVIII Conferencia Latinoamericana de Inform�tica - CLEI, 2002" ;
-                     
-                      .
-            ### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#SRFP95
-              :SRFP95 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :Article ;
-                     :temAutor :hs ;
-		     
-:temAutor :jmf ;
-		     
-:temAutor :ajp ;
-		     
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#GARH09
+:GARH09 rdf:type owl:NamedIndividual ,
+                 :Article ,
+                 :Publication ;
+        :temAutorRef :grl ,
+                     :jcr ,
+                     :prh ,
+                     :rpa ;
+        :doi "http://hdl.handle.net/1822/9741" ;
+        :issn "1755-0556. 1:3-4 (2009) 173 - 181" ;
+        :journal "International Journal of Reasoning-based Intelligent Systems" ;
+        :publisher "Inderscience" ;
+        :title "Topic maps constraint languages : understanding and comparing" ;
+        :year 2009 .
 
-                     :temAutorRef :jcr ;
-		             
-                     
-                     
-                     :title "A Heterogeneous Computer Vision Architecture: Implementation Issues" ;
-                     
-                     :year 1995 ;
-                     
-                     
-                     
-                     
-                     :journal "Computing Systems in Engineering" ;
-                     
-                     :volume "volume 6, n�mero 4/5, p�ginas 401-408" ;
-                     
-                      .
-            ### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#JLRH02b
-              :JLRH02b rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :Article ;
-                     
-                     :temAutorRef :mhj ;
-		     :temAutorRef :grl ;
-		     :temAutorRef :jcr ;
-		     :temAutorRef :prh ;
-		             
-                     
-                     :publisher "ACM Press" ;
-                     :title "XCSL tutorial" ;
-                     
-                     :year 2002 ;
-                     
-                     :doi "http://hdl.handle.net/1822/610" ;
-                     
-                     :uri "http://doi.acm.org/10.1145/991118.991122" ;
-                     :journal "ACM Crossroads" ;
-                     
-                     :volume "8.5" ;
-                     
-                      .
-            ### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RLH05_revAPSI17
-              :RLH05_revAPSI17 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :Article ;
-                     
-                     :temAutorRef :jcr ;
-		     :temAutorRef :grl ;
-		     :temAutorRef :prh ;
-		             
-                     
-                     :publisher "APSI" ;
-                     :title "Gera��o autom�tica de interfaces Web para Sistemas de Informa��o: Metamorphosis" ;
-                     
-                     :year 2005 ;
-                     
-                     :doi "http://hdl.handle.net/1822/4365" ;
-                     
-                     
-                     :journal "Revista da Associa��o Portuguesa de Sistemas de Informa��o" ;
-                     
-                     :volume "17" ;
-                     
-                     :issn "0872-7031" ; .
-            ### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RH2002
-              :RH2002 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :Book ;
-                     :temAutor :jcr ;
-		     
-:temAutor :prh ;
-		     
 
-                             
-                     :address "FCA - Editora de Inform�tica" ;
-                     :publisher "Colec��o Tecnologias da Informa��o" ;
-                     :title "XML e XSL: da teoria � pr�tica" ;
-                     
-                     :year 2002 ;
-                     :month "11" ;
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                      .
-            ### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RL05
-              :RL05 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :Book ;
-                     
-                     :temAutorRef :jcr ;
-		     :temAutorRef :cajo ;
-		             
-                     :address "FCA - Editora de Inform�tica" ;
-                     :publisher "Colec��o Web Pro" ;
-                     :title "Web Services: Aplica��es Distribu�das sobre Protocolos Internet" ;
-                     
-                     :year 2005 ;
-                     :month "03" ;
-                     
-                     :isbn "972-722-421-0" ;
-                     
-                     
-                     
-                     
-                     
-                      .
-            ### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#IGI2013
-              :IGI2013 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InBook ;
-                     
-                     :editadoPor :rq ;
-		     
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#IGI2013
+:IGI2013 rdf:type owl:NamedIndividual ,
+                  :InBook ,
+                  :Publication ;
+         :editadoPor :rq ;
+         :temAutorRef :jcr ,
+                      :rf ;
+         :temEditorRef :albie ,
+                       :jcr ;
+         :chapter "New Dimension in Relational Database Preservation: Using Ontologies" ;
+         :doi "10.4018/978-1-4666-2669-0.ch009" ;
+         :month "06" ;
+         :pages "160-173" ;
+         :publisher "IGI Global" ;
+         :title "Innovations in XML Applications and Metadata Management: Advancing Technologies" ;
+         :year 2013 .
 
-                     :temAutorRef :rf ;
-		     :temAutorRef :jcr ;
-		     
-                     :temEditorRef :jcr ;
-		     :temEditorRef :albie ;
-		             
-                     
-                     :publisher "IGI Global" ;
-                     :title "Innovations in XML Applications and Metadata Management: Advancing Technologies" ;
-                     
-                     :year 2013 ;
-                     :month "06" ;
-                     :doi "10.4018/978-1-4666-2669-0.ch009" ;
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     :pages "160-173" ;
-                     :chapter "New Dimension in Relational Database Preservation: Using Ontologies" ; .
-            ### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#Ram99b
-              :Ram99b rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InBook ;
-                     
-                     
-                     :temAutorRef :jcr ;
-		     
-                             
-                     
-                     :publisher "Sociedade Brasileira de Computa��o (SBC)" ;
-                     :title "EINE'99 - II Escola de Inform�tica da Sociedade Brasileira de Computa��o" ;
-                     
-                     :year 1999 ;
-                     :month "11.23-26" ;
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     :pages "49-76" ;
-                     :chapter "Extensible Markup Language (XML)- A promessa e a esperan�a?..." ; .
-            ### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RLH06
-              :RLH06 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :InBook ;
-                     
-                     :editadoPor :lutz ;
-		     
-:editadoPor :park ;
-		     
 
-                     :temAutorRef :jcr ;
-		     :temAutorRef :grl ;
-		     :temAutorRef :prh ;
-		     
-                             
-                     
-                     :publisher "Springer-Verlag GmbH" ;
-                     :title "Lecture Notes in Computer Science" ;
-                     
-                     :year 2006 ;
-                     :month "02" ;
-                     :doi "10.1007/11676904_2" ;
-                     :isbn "3-540-32527-1" ;
-                     
-                     
-                     
-                     :volume "3873 / 2006" ;
-                     
-                     
-                     :pages "14-25" ;
-                     :chapter "Metamorphosis - A Topic Maps Based Environment to Handle Heterogeneous Information Resources" ; .
-            ### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#RFCFBC06
-              :RFCFBC06 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :Misc ;
-                     
-                     
-                     :temAutorRef :jcr ;
-		     :temAutorRef :mf ;
-		     :temAutorRef :rc ;
-		     :temAutorRef :lf ;
-		     :temAutorRef :fb ;
-		     :temAutorRef :lcor ;
-		     
-                             
-                     
-                     
-                     :title "RODA - Desenvolvimento de uma plataforma tecnol�gica para suporte de Arquivos Digitais" ;
-                     :howpublished "Apresenta��o efectuada no Encontro Sofware Livre na Administra��o P�blica, Torre do Tombo, Lisboa - Portugal, em 29 de Novembro de 2006." ;
-                     
-                     :year 2006 ;
-                     
-                     :doi "http://hdl.handle.net/1822/6420" ;
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                      .
-            ### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#FBR07
-              :FBR07 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :Misc ;
-                     
-                     
-                     :temAutorRef :mf ;
-		     :temAutorRef :aab ;
-		     :temAutorRef :jcr ;
-		     
-                             
-                     
-                     
-                     :title "CRiB : preservation services for Digital Repositories" ;
-                     :howpublished "Apresenta��o efectuada na International Conference Open Repositories, 2, San Antonio, Texas, United States of America, 2007." ;
-                     
-                     :year 2007 ;
-                     
-                     :doi "http://hdl.handle.net/1822/6195" ;
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                      .
-            ### http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#Ram98
-              :Ram98 rdf:type owl:NamedIndividual ,
-                              :Publication , 
-                              :Misc ;
-                     
-                     
-                     :temAutorRef :jcr ;
-		     
-                             
-                     
-                     
-                     :title "Tutorial: Documenta��o Estruturada - Ser� que a minha empresa deve migrar para uma tecnologia baseada em SGML?" ;
-                     :howpublished "tutorial at Terceiro Encontro Nacional para a Qualidade nas tecnologias de informa��o e comunica��o, Guimar�es - Portugal" ;
-                     
-                     :year 1998 ;
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                      .
-             
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#ap
-    :ap rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Andr� Pereira" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#bf
-    :bf rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Bruno Ferreira" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#asantos
-    :asantos rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Andr� Santos" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#jmoreira
-    :jmoreira rdf:type owl:NamedIndividual ,
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#JHR00
+:JHR00 rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutorRef :jcr ,
+                    :mhj ,
+                    :prh ;
+       :address "Instituto de L�gica, Lenguaje e Informaci�n, Universidad de Sevilla, Espanha" ;
+       :booktitle "Logic, Language and Information: Proceedings of the First Workshop on Logic and Language" ;
+       :doi "http://hdl.handle.net/1822/597" ;
+       :month "11.29" ;
+       :title "XML and Semantic Validation" ;
+       :year 2000 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#JLRH02
+:JLRH02 rdf:type owl:NamedIndividual ,
+                 :InProceeding ,
+                 :Publication ;
+        :temAutor :mhj ;
+        :temAutorRef :grl ,
+                     :jcr ,
+                     :prh ;
+        :address "Montevideo, Uruguai," ;
+        :booktitle "CLEI'02" ;
+        :doi "http://hdl.handle.net/1822/612" ;
+        :month "11" ;
+        :title "XCSL: XML Constraint Specification Language" ;
+        :year 2002 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#JLRH02b
+:JLRH02b rdf:type owl:NamedIndividual ,
+                  :Article ,
+                  :Publication ;
+         :temAutorRef :grl ,
+                      :jcr ,
+                      :mhj ,
+                      :prh ;
+         :doi "http://hdl.handle.net/1822/610" ;
+         :journal "ACM Crossroads" ;
+         :publisher "ACM Press" ;
+         :title "XCSL tutorial" ;
+         :year 2002 ;
+         :uri "http://doi.acm.org/10.1145/991118.991122" ;
+         :volume "8.5" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#JLRH03
+:JLRH03 rdf:type owl:NamedIndividual ,
+                 :Article ,
+                 :Publication ;
+        :temAutorRef :grl ,
+                     :jcr ,
+                     :mhj ,
+                     :prh ;
+        :journal "CLEI Electronic Journal,  ISSN 0717-5000. 2003. " ;
+        :title "XCSL: XML Constraint Specification Language" ;
+        :year 2003 ;
+        :volume "Best papers of XXVIII Conferencia Latinoamericana de Inform�tica - CLEI, 2002" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#JLRHb02
+:JLRHb02 rdf:type owl:NamedIndividual ,
+                  :InProceeding ,
+                  :Publication ;
+         :temAutorRef :grl ,
+                      :jcr ,
+                      :mhj ,
+                      :prh ;
+         :address "Rio de Janeiro - Brasil" ;
+         :booktitle "7th International Conference on CSCW in  Design" ;
+         :doi "http://hdl.handle.net/1822/601" ;
+         :month "09.25" ;
+         :title "Bidirectional Conversion between XML Documents and Relational Data Bases" ;
+         :year 2002 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#JLRHc02
+:JLRHc02 rdf:type owl:NamedIndividual ,
+                  :InProceeding ,
+                  :Publication ;
+         :temAutorRef :grl ,
+                      :jcr ,
+                      :mhj ,
+                      :prh ;
+         :address "Barcelona - Espanha" ;
+         :booktitle "XML Europe'02" ;
+         :doi "http://hdl.handle.net/1822/619" ;
+         :month "05.20" ;
+         :title "Constraint Specification Languages: comparing XCSL, Schematron and XML-Schema" ;
+         :year 2002 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#JRH03
+:JRH03 rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutorRef :jcr ,
+                    :mhj ,
+                    :prh ;
+       :address "Vila Verde - Portugal" ;
+       :booktitle "XATA2003 - XML: Aplica��es e Tecnologias Associadas" ;
+       :doi "http://hdl.handle.net/1822/4911" ;
+       :month "02.13-14" ;
+       :title "XML Templates for Constraints (XTC), Um N�vel de Abstrac��o para Linguagens de Especifica��o de Restri��es" ;
+       :year 2003 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#LARH07_EPIA
+:LARH07_EPIA rdf:type owl:NamedIndividual ,
+                      :InProceeding ,
+                      :Publication ;
+             :temAutorRef :grl ,
+                          :jcr ,
+                          :prh ,
+                          :rpa ;
+             :address "Guimar�es - Portugal" ;
+             :booktitle "Portuguese Conference on Artificial Intelligence (EPIA2007)" ;
+             :doi "http://hdl.handle.net/1822/7368" ;
+             :title "Topic Maps Constraint Languages: understanding and comparing" ;
+             :year 2007 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#LATRH07_CLEI
+:LATRH07_CLEI rdf:type owl:NamedIndividual ,
+                       :InProceeding ,
+                       :Publication ;
+              :temAutor :rct ;
+              :temAutorRef :grl ,
+                           :jcr ,
+                           :prh ,
+                           :rpa ;
+              :address "San Jos� - Costa Rica" ;
+              :booktitle "XXXIII Conferencia Latinoamericana de Inform�tica (CLEI2007)" ;
+              :doi "http://hdl.handle.net/1822/7364" ;
+              :title "Implementing TMCL: XTche - a topic map schema and constraint specification language" ;
+              :year 2007 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#LGRH07_CLEI
+:LGRH07_CLEI rdf:type owl:NamedIndividual ,
+                      :InProceeding ,
+                      :Publication ;
+             :temAutor :jg ;
+             :temAutorRef :grl ,
+                          :jcr ,
+                          :prh ;
+             :address "San Jos� - Costa Rica" ;
+             :booktitle "XXXIII Conferencia Latinoamericana de Inform�tica (CLEI2007)" ;
+             :doi "http://hdl.handle.net/1822/7354" ;
+             :title "Using Web Services to put Metamorphosis on the Web" ;
+             :year 2007 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#LMMFRH07_TMRA
+:LMMFRH07_TMRA rdf:type owl:NamedIndividual ,
+                        :InProceeding ,
+                        :Publication ;
+               :temAutor :htm ,
+                         :mom ,
+                         :pgf ;
+               :temAutorRef :grl ,
+                            :jcr ,
+                            :prh ;
+               :address "Leipzig - Germany" ;
+               :booktitle "International Conference on Topic Maps Research and Applications (TMRA2007)" ;
+               :doi "http://hdl.handle.net/1822/7399" ;
+               :title "Comparing Topic Maps Constraint Specification Languages" ;
+               :year 2007 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#LMMVRH08_XATA
+:LMMVRH08_XATA rdf:type owl:NamedIndividual ,
+                        :InProceeding ,
+                        :Publication ;
+               :temAutor :hm ,
+                         :jv ,
+                         :mm ;
+               :temAutorRef :grl ,
+                            :jcr ,
+                            :prh ;
+               :address "�vora - Portugal" ;
+               :booktitle "XATA 2008 -  XML: Aplica��es e Tecnologias Associadas (6� Confer�ncia Nacional)" ;
+               :month "02.14" ;
+               :title "Generating a Semantic Network for PubMed" ;
+               :year 2008 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#LPRH07_TM
+:LPRH07_TM rdf:type owl:NamedIndividual ,
+                    :InProceeding ,
+                    :Publication ;
+           :temAutorRef :grl ,
+                        :jcr ,
+                        :prh ,
+                        :rpa ;
+           :address "Oslo - Norway" ;
+           :booktitle "Topic Maps 2007 -  The First International Topic Maps User Conference" ;
+           :doi "http://hdl.handle.net/1822/6474" ;
+           :month "03.21" ;
+           :title "Topic Maps Constraint Specification Languages: comparing AsTMa!, OSL, and XTche" ;
+           :year 2007 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#LPRH07_XATA
+:LPRH07_XATA rdf:type owl:NamedIndividual ,
+                      :InProceeding ,
+                      :Publication ;
+             :temAutor :rpa ;
+             :temAutorRef :grl ,
+                          :jcr ,
+                          :prh ;
+             :address "Lisboa - Portugal" ;
+             :booktitle "XATA 2007 -  XML: Aplica��es e Tecnologias Associadas (5� Confer�ncia Nacional)" ;
+             :doi "http://hdl.handle.net/1822/6482" ;
+             :month "02.14" ;
+             :title "Navegando na Rede Sem�ntica dos Topic Maps com o Ulisses" ;
+             :year 2007 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#LR04
+:LR04 rdf:type owl:NamedIndividual ,
+               :InProceeding ,
+               :Publication ;
+      :temAutor :cajo ;
+      :temAutorRef :jcr ;
+      :address "Faculdade de Engenharia da Universidade do Porto - Porto" ;
+      :booktitle "XML: Aplica��es e Tecnologias Associadas (XATA 2004)" ;
+      :doi "http://hdl.handle.net/1822/559" ;
+      :isbn "972-99166-0-8" ;
+      :month "02.12" ;
+      :title "Web Services: Metodologias de Desenvolvimento" ;
+      :year 2004 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#LRH03
+:LRH03 rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutorRef :grl ,
+                    :jcr ,
+                    :prh ;
+       :address "Braga - Portugal" ;
+       :booktitle "XATA 2003 - XML, Aplica��es e Tecnologias Associadas" ;
+       :doi "http://hdl.handle.net/1822/620" ;
+       :month "02.13" ;
+       :title "XML Topic Map Builder: Specification and Generation" ;
+       :year 2003 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#LRH03b
+:LRH03b rdf:type owl:NamedIndividual ,
+                 :InProceeding ,
+                 :Publication ;
+        :temAutorRef :grl ,
+                     :jcr ,
+                     :prh ;
+        :address "La Paz, Bol�via" ;
+        :booktitle "CLEI'03" ;
+        :doi "http://hdl.handle.net/1822/555" ;
+        :month "09.29" ;
+        :title "TM-Builder: Um Construtor de Ontologias baseado em Topic Maps" ;
+        :year 2003 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#LRH03c
+:LRH03c rdf:type owl:NamedIndividual ,
+                 :InProceeding ,
+                 :Publication ;
+        :temAutorRef :grl ,
+                     :jcr ,
+                     :prh ;
+        :address "ISEP, Porto, Portugal" ;
+        :booktitle "COOPMedia 2003" ;
+        :doi "http://hdl.handle.net/1822/556" ;
+        :month "10.08" ;
+        :title "Gera��o autom�tica de interfaces Web para sistemas de informa��o: Metamorphosis" ;
+        :year 2003 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#LRH04
+:LRH04 rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutorRef :grl ,
+                    :jcr ,
+                    :prh ;
+       :address "Faculdade de Engenharia da Universidade do Porto - Porto" ;
+       :booktitle "XML: Aplica��es e Tecnologias Associadas (XATA 2004)" ;
+       :doi "http://hdl.handle.net/1822/613" ;
+       :isbn "972-99166-0-8" ;
+       :month "02.12" ;
+       :title "Um Extractor de Topic Maps a partir de Recursos Heterog�neos de Informa��o" ;
+       :year 2004 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#LRH04_Clei
+:LRH04_Clei rdf:type owl:NamedIndividual ,
+                     :InProceeding ,
+                     :Publication ;
+            :temAutorRef :grl ,
+                         :jcr ,
+                         :prh ;
+            :address "Sociedad Peruana de Computaci�n, Peru" ;
+            :booktitle "30ma Conferencia Latinoamericana de Inform�tica (CLEI2004)" ;
+            :doi "http://hdl.handle.net/1822/594" ;
+            :isbn "9972-9876-2-0" ;
+            :month "Sept." ;
+            :title "Extra��o de Topic Maps no Oveia: Especifica��o e Processamento" ;
+            :year 2004 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#LRH04_WWS
+:LRH04_WWS rdf:type owl:NamedIndividual ,
+                    :InProceeding ,
+                    :Publication ;
+           :temAutorRef :grl ,
+                        :jcr ,
+                        :prh ;
+           :address "Bras�lia, Brasil" ;
+           :booktitle "I  Workshop de Web Sem�ntica (WWS2004)" ;
+           :month "10.22" ;
+           :title "Achieving Semantic Interoperability in Heterogeneous Information Systems with Topic Maps" ;
+           :year 2004 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#LRH04_XMLw
+:LRH04_XMLw rdf:type owl:NamedIndividual ,
+                     :InProceeding ,
+                     :Publication ;
+            :temAutorRef :grl ,
+                         :jcr ,
+                         :prh ;
+            :address "Washington, USA" ;
+            :booktitle "XML Conference and Exhibition 2004 Proceedings" ;
+            :doi "http://hdl.handle.net/1822/681" ;
+            :month "12" ;
+            :title "XTche - A Language for Topic Maps Schema and Constraints" ;
+            :year 2004 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#LRH05
+:LRH05 rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutorRef :grl ,
+                    :jcr ,
+                    :prh ;
+       :address "Braga" ;
+       :booktitle "XML: Aplica��es e Tecnologias Associadas (XATA 2005)" ;
+       :doi "http://hdl.handle.net/1822/1020" ;
+       :isbn "972-99166-1-6" ;
+       :month "02.10" ;
+       :title "Obtendo Interoperabilidade Sem�ntica em Sistemas Heterog�neos de Informa��o com Metamorphosis" ;
+       :year 2005 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#LRH05_CLEI
+:LRH05_CLEI rdf:type owl:NamedIndividual ,
+                     :InProceeding ,
+                     :Publication ;
+            :temAutorRef :grl ,
+                         :jcr ,
+                         :prh ;
+            :address "Santiago de Cali - Colombia" ;
+            :booktitle "XXXI Confer�ncia Latinoamericana de Inform�tica" ;
+            :doi "http://hdl.handle.net/1822/3532" ;
+            :isbn "958-670-422-X" ;
+            :month "10.10" ;
+            :title "Ulisses: Um Navegador Conceptual para Topic Maps" ;
+            :year 2005 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#LRH05b
+:LRH05b rdf:type owl:NamedIndividual ,
+                 :InProceeding ,
+                 :Publication ;
+        :temAutorRef :grl ,
+                     :jcr ,
+                     :prh ;
+        :address "Braga" ;
+        :booktitle "XML: Aplica��es e Tecnologias Associadas (XATA 2005)" ;
+        :doi "http://hdl.handle.net/1822/994" ;
+        :isbn "972-99166-1-6" ;
+        :month "02.10" ;
+        :title "Constraining XML Topic Maps with XTche" ;
+        :year 2005 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#LRH06_SBSI06
+:LRH06_SBSI06 rdf:type owl:NamedIndividual ,
+                       :InProceeding ,
+                       :Publication ;
+              :temAutorRef :grl ,
+                           :jcr ,
+                           :prh ;
+              :address "Curitiba, Paran� - Brasil" ;
+              :booktitle "III Simp�sio Brasileiro de Sistemas de Informa��o" ;
+              :doi "http://hdl.handle.net/1822/7359" ;
+              :title "Metamorphosis: An Environment to Achieve Semantic Interoperability with Topic Maps" ;
+              :year 2006 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#LRH06_XATA
+:LRH06_XATA rdf:type owl:NamedIndividual ,
+                     :InProceeding ,
+                     :Publication ;
+            :temAutorRef :grl ,
+                         :jcr ,
+                         :prh ;
+            :address "Portalegre - Portugal" ;
+            :booktitle "XATA - XML: Aplica��es e Tecnologias Associadas" ;
+            :doi "http://hdl.handle.net/1822/4910" ;
+            :isbn "972-99166-2-4" ;
+            :month "02.09" ;
+            :title "Topic Maps Aplicados ao Sistema de Informa��o do Museu da Emigra��o" ;
+            :year 2006 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#LRH07_SEMINFO
+:LRH07_SEMINFO rdf:type owl:NamedIndividual ,
+                        :InProceeding ,
+                        :Publication ;
+               :temAutorRef :grl ,
+                            :jcr ,
+                            :prh ;
+               :address "Torres, RS - Brasil" ;
+               :booktitle "VI Semin�rio de Inform�tica - SEMINFO, 2007, Torres, RS, Brasil." ;
+               :title "Estruturando o conhecimento com a norma ISO 13250 Topic Maps" ;
+               :year 2007 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#LRH97
+:LRH97 rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutorRef :arl ,
+                    :jcr ,
+                    :prh ;
+       :address "Campinas-SP -- Brasil" ;
+       :booktitle "II Brasilian Symposium on Programming Languages (SBLP'97)" ;
+       :doi "http://hdl.handle.net/1822/616" ;
+       :month "09" ;
+       :title "INES, an Environment for Structured Editions of SGML Documents" ;
+       :year 1997 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#LRHGT08
+:LRHGT08 rdf:type owl:NamedIndividual ,
+                  :InProceeding ,
+                  :Publication ;
+         :temAutorRef :grl ,
+                      :jcr ,
+                      :jg ,
+                      :prh ,
+                      :rct ;
+         :address "Lisboa, Portugal" ;
+         :booktitle "SIGDOC'08 -- 26th ACM International Conference on Design of Communication" ;
+         :doi "http://hdl.handle.net/1822/8236" ;
+         :month "09-23" ;
+         :title "A Framework to specify, extract and manage Topic Maps driven by ontologies" ;
+         :year 2008 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#LSRH04
+:LSRH04 rdf:type owl:NamedIndividual ,
+                 :InProceeding ,
+                 :Publication ;
+        :temAutor :ws ;
+        :temAutorRef :grl ,
+                     :jcr ,
+                     :prh ;
+        :address "Porto - Portugal" ;
+        :booktitle "International Conference on Knowledge Engineering and Decision Support" ;
+        :doi "http://hdl.handle.net/1822/584" ;
+        :month "07.21-23" ;
+        :title "Using the Ontology Paradigm to integrate Information Systems" ;
+        :year 2004 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#MRH04
+:MRH04 rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutor :ram ;
+       :temAutorRef :jcr ,
+                    :prh ;
+       :address "Faculdade de Engenharia da Universidade do Porto - Porto" ;
+       :booktitle "XML: Aplica��es e Tecnologias Associadas (XATA 2004)" ;
+       :doi "http://hdl.handle.net/1822/562" ;
+       :isbn "972-99166-0-8" ;
+       :month "02.12" ;
+       :title "Compara��o de Linguagens para descri��o de Interfaces baseadas em XML" ;
+       :year 2004 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RAH1998
+:RAH1998 rdf:type owl:NamedIndividual ,
+                  :Article ,
+                  :Publication ;
+         :temAutor :jj ;
+         :temAutorRef :jcr ,
+                      :prh ;
+         :journal "Theoretical Computer Science journal, volume 199" ;
+         :month "06" ;
+         :title "Algebraic Specification of Documents" ;
+         :year 1998 ;
+         :volume "Elsevier" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RAH95
+:RAH95 rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutorRef :jcr ,
+                    :jj ,
+                    :prh ;
+       :address "Twente - Holanda" ;
+       :booktitle "Algebraic Methods in Language Processing" ;
+       :doi "http://hdl.handle.net/1822/618" ;
+       :month "12" ;
+       :title "DAVID, Algebraic Specification of Documents" ;
+       :year 1995 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RAH96
+:RAH96 rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutorRef :jcr ,
+                    :jj ,
+                    :prh ;
+       :address "Boston - USA" ;
+       :booktitle "SGML96" ;
+       :doi "http://hdl.handle.net/1822/622" ;
+       :month "12" ;
+       :title "Document Semantics: two approaches" ;
+       :year 1996 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RARH98
+:RARH98 rdf:type owl:NamedIndividual ,
+                 :Article ,
+                 :Publication ;
+        :temAutor :jgr ;
+        :temAutorRef :jcr ,
+                     :jj ,
+                     :prh ;
+        :doi "http://hdl.handle.net/1822/644" ;
+        :issn "1099-6621" ;
+        :journal "Markup Languages: theory and practice " ;
+        :month "01" ;
+        :title "SGML Documents: Where does quality go?" ;
+        :year 1999 ;
+        :volume "journal, num. 1 vol. 1, MIT Press" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RD06_XATA
+:RD06_XATA rdf:type owl:NamedIndividual ,
+                    :InProceeding ,
+                    :Publication ;
+           :temAutor :migaldo ;
+           :temAutorRef :jcr ;
+           :address "Portalegre - Portugal" ;
+           :booktitle "XATA - XML: Aplica��es e Tecnologias Associadas" ;
+           :doi "http://hdl.handle.net/1822/4576" ;
+           :isbn "972-99166-2-4" ;
+           :month "02.09" ;
+           :title "Especifica��o e Gera��o Autom�tica de Navegadores para Redes Sem�nticas Baseados em Interfaces Web" ;
+           :year 2006 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RFCFBC06
+:RFCFBC06 rdf:type owl:NamedIndividual ,
+                   :Misc ,
+                   :Publication ;
+          :temAutorRef :fb ,
+                       :jcr ,
+                       :lcor ,
+                       :lf ,
+                       :mf ,
+                       :rc ;
+          :doi "http://hdl.handle.net/1822/6420" ;
+          :howpublished "Apresenta��o efectuada no Encontro Sofware Livre na Administra��o P�blica, Torre do Tombo, Lisboa - Portugal, em 29 de Novembro de 2006." ;
+          :title "RODA - Desenvolvimento de uma plataforma tecnol�gica para suporte de Arquivos Digitais" ;
+          :year 2006 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RFCFBC07
+:RFCFBC07 rdf:type owl:NamedIndividual ,
+                   :InProceeding ,
+                   :Publication ;
+          :temAutor :fb ,
+                    :lcor ,
+                    :lf ,
+                    :rc ;
+          :temAutorRef :jcr ,
+                       :mf ;
+          :address "Lisboa, Portugal" ;
+          :booktitle "XATA2007 : XML : aplica��es e tecnologias associadas : actas da Confer�ncia Nacional" ;
+          :doi "http://hdl.handle.net/1822/6224" ;
+          :month "02.15" ;
+          :title "XML e preserva��o digital" ;
+          :year 2007 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RFFC07_EML
+:RFFC07_EML rdf:type owl:NamedIndividual ,
+                     :InProceeding ,
+                     :Publication ;
+            :temAutorRef :jcr ,
+                         :lf ,
+                         :mf ,
+                         :rc ;
+            :address "Montr�al - Canada" ;
+            :booktitle "Extreme Markup Languages 2007, Montr�al - Canada, August 2007." ;
+            :doi "http://hdl.handle.net/1822/7120" ;
+            :month "08" ;
+            :title "Relational database preservation through XML modelling" ;
+            :year 2007 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RFFCBC08
+:RFFCBC08 rdf:type owl:NamedIndividual ,
+                   :InProceeding ,
+                   :Publication ;
+          :temAutorRef :fb ,
+                       :jcr ,
+                       :lc ,
+                       :lf ,
+                       :mf ,
+                       :rc ;
+          :address "London, England" ;
+          :booktitle "iPRES 2008: The Fifth International Conference on Preservation of Digital Objects" ;
+          :doi "http://hdl.handle.net/1822/8226" ;
+          :month "09" ;
+          :title "RODA and Crib: A Service-Oriented Digital Repository" ;
+          :year 2008 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RFFLS06
+:RFFLS06 rdf:type owl:NamedIndividual ,
+                  :InProceeding ,
+                  :Publication ;
+         :temAutor :as ,
+                   :mjpl ;
+         :temAutorRef :jcr ,
+                      :lmf ,
+                      :mf ;
+         :address "Seixal, Portugal" ;
+         :booktitle "2� Confer�ncia Internacional de Arquivos Empresariais" ;
+         :doi "http://hdl.handle.net/1822/6038" ;
+         :month "11.27" ;
+         :title "Digitarq2 : nova arquitectura aplicacional para gest�o de Arquivos Definitivos" ;
+         :year 2006 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RH2002
+:RH2002 rdf:type owl:NamedIndividual ,
+                 :Book ,
+                 :Publication ;
+        :temAutor :jcr ,
+                  :prh ;
+        :address "FCA - Editora de Inform�tica" ;
+        :month "11" ;
+        :publisher "Colec��o Tecnologias da Informa��o" ;
+        :title "XML e XSL: da teoria � pr�tica" ;
+        :year 2002 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RH94
+:RH94 rdf:type owl:NamedIndividual ,
+               :InProceeding ,
+               :Publication ;
+      :temAutorRef :jcr ,
+                   :prh ;
+      :address "Universidade do Minho" ;
+      :booktitle "I Confer�ncia Nacional WWW,    Informa��o Multim�dia na Internet" ;
+      :month "07" ;
+      :title "Uma experi�ncia de utiliza��o da Internet na gest�o pedag�gica e sua formaliza��o" ;
+      :year 1995 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RH98
+:RH98 rdf:type owl:NamedIndividual ,
+               :Article ,
+               :Publication ;
+      :temAutorRef :jcr ,
+                   :prh ;
+      :journal "Sistemas de Informa��o" ;
+      :title "Qualidade na Publica��o Electr�nica: como control�-la?" ;
+      :year 1998 ;
+      :volume "journal, num. 9, pg 69-83, Associa��o Portuguesa de Sistemas de Informa��o" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RH98b
+:RH98b rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutorRef :jcr ,
+                    :prh ;
+       :address "Guimar�es - Portugal" ;
+       :booktitle "Quatic 98: III Encontro Nacional para a Qualidade nas Tecnologias da Informa��o e Comunica��o" ;
+       :doi "http://hdl.handle.net/1822/621" ;
+       :title "Qualidade na Publica��o Electr�nica: como control�-la?" ;
+       :year 1998 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RH98c
+:RH98c rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutorRef :jcr ,
+                    :prh ;
+       :address "Porto - Portugal" ;
+       :booktitle "Workshop internacional Informa��o e documentos de arquivo em ambientes digitais" ;
+       :title "Informatics and Archives: a present needed symbiosis" ;
+       :year 1998 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RH98d
+:RH98d rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutorRef :jcr ,
+                    :prh ;
+       :address "Loures - Portugal " ;
+       :booktitle "IX encontro nacional de Museus e Autarquias" ;
+       :title "Os desafios colocados pela informa��o estruturada no contexto dos arquivos: o arquivo distrital de Braga" ;
+       :year 1998 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RH99
+:RH99 rdf:type owl:NamedIndividual ,
+               :InProceeding ,
+               :Publication ;
+      :temAutorRef :jcr ,
+                   :jj ;
+      :address "Granada - Espanha" ;
+      :booktitle "XML Europe'99" ;
+      :doi "http://hdl.handle.net/1822/632" ;
+      :title "XML::DT - a Perl Down Translation Module" ;
+      :year 1999 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RHHRAF98
+:RHHRAF98 rdf:type owl:NamedIndividual ,
+                   :InProceeding ,
+                   :Publication ;
+          :temAutor :jlf ,
+                    :mrh ;
+          :temAutorRef :jcr ,
+                       :jgr ,
+                       :jj ,
+                       :prh ;
+          :address "Toronto, Canada" ;
+          :booktitle "Museums and the Web: An International Conference" ;
+          :doi "http://hdl.handle.net/1822/624" ;
+          :month "04.22" ;
+          :title "Adapting Museum Structures for the Web: No Changes Needed!" ;
+          :year 1998 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RHL04_eLes
+:RHL04_eLes rdf:type owl:NamedIndividual ,
+                     :InProceeding ,
+                     :Publication ;
+            :temAutorRef :grl ,
+                         :jcr ,
+                         :prh ;
+            :address "Universidade de Aveiro, Portugal" ;
+            :booktitle "Confer�ncia eLes'04 - E-Learning no Ensino Superior" ;
+            :doi "http://hdl.handle.net/1822/733" ;
+            :isbn "972-789-134-9" ;
+            :month "Outubro" ;
+            :title "ADRIAN: Sistema de Suporte � Produ��o de Conte�dos" ;
+            :year 2004 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RHLA03
+:RHLA03 rdf:type owl:NamedIndividual ,
+                 :Proceeding ,
+                 :Publication ;
+        :editadoPor :gva ;
+        :temEditorRef :grl ,
+                      :jcr ,
+                      :prh ;
+        :address "Vila Verde - Portugal" ;
+        :doi "http://hdl.handle.net/1822/607" ;
+        :month "02.13-14" ;
+        :title "XATA2003 - XML: Aplica��es e Tecnologias Associadas" ;
+        :year 2003 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RHb98
+:RHb98 rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutorRef :jcr ,
+                    :prh ;
+       :address "Paris - France" ;
+       :booktitle "SGML Europe 98 Conference" ;
+       :doi "http://hdl.handle.net/1822/636" ;
+       :month "05" ;
+       :title "Beyond DTDs: Constraining Data Content" ;
+       :year 1998 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RL05
+:RL05 rdf:type owl:NamedIndividual ,
+               :Book ,
+               :Publication ;
+      :temAutorRef :cajo ,
+                   :jcr ;
+      :address "FCA - Editora de Inform�tica" ;
+      :isbn "972-722-421-0" ;
+      :month "03" ;
+      :publisher "Colec��o Web Pro" ;
+      :title "Web Services: Aplica��es Distribu�das sobre Protocolos Internet" ;
+      :year 2005 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RLA08
+:RLA08 rdf:type owl:NamedIndividual ,
+                :Proceeding ,
+                :Publication ;
+       :editadoPor :sa ;
+       :temEditorRef :jcl ,
+                     :jcr ;
+       :address "Departamento de Inform�tica da Universidade de �vora, �vora - Portugal" ;
+       :doi "http://hdl.handle.net/1822/7708" ;
+       :isbn "978-972-99166-5-6" ;
+       :month "02.14" ;
+       :title "XATA2008 (6� Confer�ncia Nacional) - XML: Aplica��es e Tecnologias Associadas" ;
+       :year 2008 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RLC07
+:RLC07 rdf:type owl:NamedIndividual ,
+                :Proceeding ,
+                :Publication ;
+       :editadoPor :lc ;
+       :temEditorRef :jcl ,
+                     :jcr ;
+       :address "Faculdade de Ci�ncias - Universidade de Lisboa, Lisboa - Portugal" ;
+       :doi "http://hdl.handle.net/1822/6234" ;
+       :isbn "978-972-99166-4-9" ;
+       :month "02.14-15" ;
+       :title "XATA2007 (5� Confer�ncia Nacional) - XML: Aplica��es e Tecnologias Associadas" ;
+       :year 2007 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RLH03
+:RLH03 rdf:type owl:NamedIndividual ,
+                :Article ,
+                :Publication ;
+       :temAutorRef :grl ,
+                    :jcr ,
+                    :prh ;
+       :journal "III International Conference on Web Engineering (ICWE)" ;
+       :month "07.15" ;
+       :title "Ontology driven websites with Topic Maps" ;
+       :year 2003 ;
+       :deliverables "http://www.di.uminho.pt/~jcr/XML/publicacoes/artigos/2003/icwe.pdf" ;
+       :volume "Oviedo - Espanha" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RLH03b
+:RLH03b rdf:type owl:NamedIndividual ,
+                 :InProceeding ,
+                 :Publication ;
+        :temAutorRef :grl ,
+                     :jcr ,
+                     :prh ;
+        :address "Badajoz - Espanha" ;
+        :booktitle "Second International Conference on Multimedia and ICTs in Education" ;
+        :doi "http://hdl.handle.net/1822/558" ;
+        :month "12.04" ;
+        :title "Adrian: a platform for E-Learning Content Prodution" ;
+        :year 2003 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RLH04
+:RLH04 rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutorRef :grl ,
+                    :jcr ,
+                    :prh ;
+       :address "Department of Information and Documentation Science at the University of Brasilia, in Brazil" ;
+       :booktitle "Electronic Publishing 2004 - Building Digital Bridges: linking cultures, commerce and science" ;
+       :doi "http://hdl.handle.net/1822/608" ;
+       :isbn "85-88130-02-05" ;
+       :month "06.23-26" ;
+       :title "Adrian - E-Learning Content Production (creating online exams)" ;
+       :year 2004 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RLH05
+:RLH05 rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutorRef :grl ,
+                    :jcr ,
+                    :prh ;
+       :address "Montr�al - Canada" ;
+       :booktitle "Extreme Markup Languages 2005, Montr�al - Canada, 1-5 August 2005." ;
+       :doi "http://hdl.handle.net/1822/3117" ;
+       :month "08.04" ;
+       :title "Constraining Topic Maps: A TMCL declarative implementation" ;
+       :year 2005 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RLH05_revAPSI17
+:RLH05_revAPSI17 rdf:type owl:NamedIndividual ,
+                          :Article ,
+                          :Publication ;
+                 :temAutorRef :grl ,
+                              :jcr ,
+                              :prh ;
+                 :doi "http://hdl.handle.net/1822/4365" ;
+                 :issn "0872-7031" ;
+                 :journal "Revista da Associa��o Portuguesa de Sistemas de Informa��o" ;
+                 :publisher "APSI" ;
+                 :title "Gera��o autom�tica de interfaces Web para Sistemas de Informa��o: Metamorphosis" ;
+                 :year 2005 ;
+                 :volume "17" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RLH05b
+:RLH05b rdf:type owl:NamedIndividual ,
+                 :InProceeding ,
+                 :Publication ;
+        :temAutorRef :grl ,
+                     :jcr ,
+                     :prh ;
+        :address "Leipzig - Germany" ;
+        :booktitle "TMRA'05 - International Workshop on  Topic Map Research and Applications " ;
+        :month "10.06" ;
+        :title "Metamorphosis - a Topic Maps based Environment to Handle Heterogeneous Information Resources" ;
+        :year 2005 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RLH06
+:RLH06 rdf:type owl:NamedIndividual ,
+                :InBook ,
+                :Publication ;
+       :editadoPor :lutz ,
+                   :park ;
+       :temAutorRef :grl ,
+                    :jcr ,
+                    :prh ;
+       :chapter "Metamorphosis - A Topic Maps Based Environment to Handle Heterogeneous Information Resources" ;
+       :doi "10.1007/11676904_2" ;
+       :isbn "3-540-32527-1" ;
+       :month "02" ;
+       :pages "14-25" ;
+       :publisher "Springer-Verlag GmbH" ;
+       :title "Lecture Notes in Computer Science" ;
+       :year 2006 ;
+       :volume "3873 / 2006" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RLH07_EML
+:RLH07_EML rdf:type owl:NamedIndividual ,
+                    :InProceeding ,
+                    :Publication ;
+           :temAutorRef :grl ,
+                        :jcr ,
+                        :prh ,
+                        :rpa ;
+           :address "Montr�al - Canada" ;
+           :booktitle "Extreme Markup Languages 2007, Montr�al - Canada, August 2007." ;
+           :doi "http://hdl.handle.net/1822/7330" ;
+           :month "08" ;
+           :title "Topic Maps applied to PubMed" ;
+           :year 2007 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RLH2003
+:RLH2003 rdf:type owl:NamedIndividual ,
+                  :InProceeding ,
+                  :Publication ;
+         :temAutor :grl ;
+         :temAutorRef :jcr ,
+                      :prh ;
+         :address "Universidade do Minho - Guimar�es - Portugal" ;
+         :booktitle "Electronic Publishing 2003: From information to knowledge" ;
+         :doi "http://hdl.handle.net/1822/553" ;
+         :month "06.25" ;
+         :title "Ontology driven Websites - Metamorphosis: a framework to specify and manage ontology driven websites" ;
+         :year 2003 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RLH98
+:RLH98 rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutor :arl ;
+       :temAutorRef :jcr ,
+                    :prh ;
+       :address "Chicago - USA" ;
+       :booktitle "Markup Technologies'98" ;
+       :doi "http://hdl.handle.net/1822/637" ;
+       :month "12" ;
+       :title "Generating SGML specific editors: from DTDs to Attribute Grammars" ;
+       :year 1998 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RLS06
+:RLS06 rdf:type owl:NamedIndividual ,
+                :Proceeding ,
+                :Publication ;
+       :temEditorRef :albie ,
+                     :jcl ,
+                     :jcr ;
+       :address "Instituto Polit�cnico de Portalegre, Portalegre - Portugal" ;
+       :doi "http://hdl.handle.net/1822/4744" ;
+       :isbn "972-99166-2-4" ;
+       :month "02.09-10" ;
+       :title "XATA2006 (4� Confer�ncia Nacional) - XML: Aplica��es e Tecnologias Associadas" ;
+       :year 2006 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RQR10
+:RQR10 rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutor :mam ,
+                 :mjc ;
+       :temAutorRef :jcr ;
+       :address "Guimar�es, Portugal" ;
+       :booktitle "10� Congresso Nacional de Bibliotec�rios, Arquivistas e Documentalistas" ;
+       :doi "http://hdl.handle.net/1822/11081" ;
+       :isbn "978-972-9067-39-6" ;
+       :month "04.08" ;
+       :title "Cria��o e Aplica��o de um modelo baseado em Topic Maps � Documenta��o Educativa" ;
+       :year 2010 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RRAH97
+:RRAH97 rdf:type owl:NamedIndividual ,
+                 :InProceeding ,
+                 :Publication ;
+        :temAutorRef :jcr ,
+                     :jgr ,
+                     :jj ,
+                     :prh ;
+        :address "Washinton - USA" ;
+        :booktitle "SGML/XML'97" ;
+        :doi "http://hdl.handle.net/1822/617" ;
+        :month "12.08" ;
+        :title "SGML Documents: Where Does Quality Go?" ;
+        :year 1997 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RS04
+:RS04 rdf:type owl:NamedIndividual ,
+               :Proceeding ,
+               :Publication ;
+      :editadoPor :albie ;
+      :temEditorRef :jcr ;
+      :address "Faculdade de Engenharia do Porto - Portugal" ;
+      :doi "http://hdl.handle.net/1822/602" ;
+      :isbn "972-99166-0-8" ;
+      :month "02.12-13" ;
+      :title "XATA2004 (1� Confer�ncia Nacional) - XML: Aplica��es e Tecnologias Associadas" ;
+      :year 2004 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RS2003
+:RS2003 rdf:type owl:NamedIndividual ,
+                 :InProceeding ,
+                 :Publication ;
+        :temAutor :jls ;
+        :temAutorRef :jcr ;
+        :address "Universidade do Minho - Guimar�es - Portugal" ;
+        :booktitle "Electronic Publishing 2003: From information to knowledge" ;
+        :doi "http://hdl.handle.net/1822/552" ;
+        :month "06.25" ;
+        :title "Electronic Publishing of ADB editions" ;
+        :year 2003 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RSL05
+:RSL05 rdf:type owl:NamedIndividual ,
+                :Proceeding ,
+                :Publication ;
+       :editadoPor :jcl ;
+       :temEditorRef :albie ,
+                     :jcr ;
+       :address "Casa da Torre, Vila Verde - Portugal" ;
+       :doi "http://hdl.handle.net/1822/865" ;
+       :isbn "972-99166-1-6" ;
+       :month "02.10-11" ;
+       :title "XATA2005 (3� Confer�ncia Nacional) - XML: Aplica��es e Tecnologias Associadas" ;
+       :year 2005 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#RTFR04
+:RTFR04 rdf:type owl:NamedIndividual ,
+                 :InProceeding ,
+                 :Publication ;
+        :temAutor :pt ,
+                  :vr ;
+        :temAutorRef :jcr ,
+                     :rf ;
+        :address "Faculdade de Engenharia da Universidade do Porto - Porto" ;
+        :booktitle "XML: Aplica��es e Tecnologias Associadas (XATA 2004)" ;
+        :doi "http://hdl.handle.net/1822/561" ;
+        :isbn "972-99166-0-8" ;
+        :month "02.12" ;
+        :title "Gerador de Web Services para cadeias de transforma��es de documentos XML" ;
+        :year 2004 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#Ram01
+:Ram01 rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutorRef :jcr ;
+       :address "Berlin - Germany" ;
+       :booktitle "XML Europe'01" ;
+       :doi "http://hdl.handle.net/1822/623" ;
+       :month "05" ;
+       :title "Constraining Content: specification and processing" ;
+       :year 2001 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#Ram03
+:Ram03 rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutorRef :jcr ;
+       :address "Braga - Portugal" ;
+       :booktitle "XATA 2003 - XML, Aplica��es e Tecnologias Associadas" ;
+       :doi "http://hdl.handle.net/1822/554" ;
+       :month "02.13" ;
+       :title "O XML nos curriculae das licenciaturas em inform�tica" ;
+       :year 2003 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#Ram05
+:Ram05 rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutorRef :jcr ;
+       :address "Braga" ;
+       :booktitle "XML: Aplica��es e Tecnologias Associadas (XATA 2005)" ;
+       :doi "http://hdl.handle.net/1822/884" ;
+       :isbn "972-99166-1-6" ;
+       :month "02.10" ;
+       :title "Document Composer: uma aplica��o XML para extrac��o de informa��o de reposit�rios XML" ;
+       :year 2005 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#Ram2000
+:Ram2000 rdf:type owl:NamedIndividual ,
+                  :Phdthesis ,
+                  :Publication ;
+         :temAutorRef :jcr ;
+         :address "Universidade do Minho" ;
+         :doi "http://hdl.handle.net/1822/5625" ;
+         :month "07" ;
+         :school "Tese de Doutoramento" ;
+         :title "Anota��o Estrutural de Documentos e sua Sem�ntica" ;
+         :year 2000 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#Ram93
+:Ram93 rdf:type owl:NamedIndividual ,
+                :Masterthesis ,
+                :Publication ;
+       :temAutorRef :jcr ;
+       :month "10" ;
+       :school "Escola de Engenharia - Universidade do Minho" ;
+       :title "Um Compilador para o GLiTCH" ;
+       :year 1993 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#Ram96
+:Ram96 rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutorRef :jcr ;
+       :address "Universidade do Minho" ;
+       :booktitle "Workshop: Document    Processing and SGML" ;
+       :month "09" ;
+       :title "DSSSL: basic topics" ;
+       :year 1996 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#Ram98
+:Ram98 rdf:type owl:NamedIndividual ,
+                :Misc ,
+                :Publication ;
+       :temAutorRef :jcr ;
+       :howpublished "tutorial at Terceiro Encontro Nacional para a Qualidade nas tecnologias de informa��o e comunica��o, Guimar�es - Portugal" ;
+       :title "Tutorial: Documenta��o Estruturada - Ser� que a minha empresa deve migrar para uma tecnologia baseada em SGML?" ;
+       :year 1998 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#Ram99
+:Ram99 rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutorRef :jcr ;
+       :address "London - England" ;
+       :booktitle "Digital Resources for the Humanities - DRH99" ;
+       :title "Recovering Old Paper Historical Documents Through SGML/XML Modelling" ;
+       :year 1999 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#Ram99b
+:Ram99b rdf:type owl:NamedIndividual ,
+                 :InBook ,
+                 :Publication ;
+        :temAutorRef :jcr ;
+        :chapter "Extensible Markup Language (XML)- A promessa e a esperan�a?..." ;
+        :month "11.23-26" ;
+        :pages "49-76" ;
+        :publisher "Sociedade Brasileira de Computa��o (SBC)" ;
+        :title "EINE'99 - II Escola de Inform�tica da Sociedade Brasileira de Computa��o" ;
+        :year 1999 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#SFRL07
+:SFRL07 rdf:type owl:NamedIndividual ,
+                 :InProceeding ,
+                 :Publication ;
+        :temAutorRef :as ,
+                     :jcr ,
+                     :lmf ,
+                     :mjpl ;
+        :address "Ponta Delgada, A�ores, Portugal" ;
+        :booktitle "9� CONGRESSO NACIONAL DE BIBLIOTEC�RIOS, ARQUIVISTAS E DOCUMENTALISTAS" ;
+        :doi "http://hdl.handle.net/1822/6432" ;
+        :month "03.29" ;
+        :title "Consulta Real em Ambiente Virtual: implementa��o de uma sala de refer�ncia e leitura virtual num arquivo" ;
+        :year 2007 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#SMR03
+:SMR03 rdf:type owl:NamedIndividual ,
+                :InProceeding ,
+                :Publication ;
+       :temAutor :des ,
+                 :mcm ;
+       :temAutorRef :jcr ;
+       :address "Vila Verde - Portugal" ;
+       :booktitle "XATA2003 - XML: Aplica��es e Tecnologias Associadas" ;
+       :doi "http://hdl.handle.net/1822/557" ;
+       :month "02.13-14" ;
+       :title "Xexam: uma linguagem de suporte para exames online (e-learning)" ;
+       :year 2003 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#SRFP95
+:SRFP95 rdf:type owl:NamedIndividual ,
+                 :Article ,
+                 :Publication ;
+        :temAutor :ajp ,
+                  :hs ,
+                  :jmf ;
+        :temAutorRef :jcr ;
+        :journal "Computing Systems in Engineering" ;
+        :title "A Heterogeneous Computer Vision Architecture: Implementation Issues" ;
+        :year 1995 ;
+        :volume "volume 6, n�mero 4/5, p�ginas 401-408" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#VECPAR93
+:VECPAR93 rdf:type owl:NamedIndividual ,
+                   :InProceeding ,
+                   :Publication ;
+          :temAutorRef :ajp ,
+                       :hs ,
+                       :jcr ,
+                       :jmf ;
+          :booktitle "1st International Meeting on Vector and Paralell Processing" ;
+          :title "A Heterogeneous Computer Vision Architecture: Implementation Issues" ;
+          :year 1993 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#aa
+:aa rdf:type owl:NamedIndividual ,
+             :Author ;
+    :name "Alan Akbik" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#aab
+:aab rdf:type owl:NamedIndividual ,
+              :Author ;
+     :name "Ana Alice Baptista" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#ajp
+:ajp rdf:type owl:NamedIndividual ,
+              :Author ;
+     :name "A. J. Proen�a" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#albie
+:albie rdf:type owl:NamedIndividual ,
+                :Editor ;
+       :name "Alberto Sim�es" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#alexandra
+:alexandra rdf:type owl:NamedIndividual ,
+                    :Author ;
+           :name "Alexandra Louren�o" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#ap
+:ap rdf:type owl:NamedIndividual ,
+             :Author ;
+    :name "Andr� Pereira" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#ar
+:ar rdf:type owl:NamedIndividual ,
+             :Author ;
+    :name "Andreas Rauber" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#archiving2013
+:archiving2013 rdf:type owl:NamedIndividual ,
+                        :InProceeding ,
+                        :Publication ;
+               :temAutorRef :jcr ,
+                            :lf ,
+                            :mf ;
+               :address "Washington DC, Estados Unidos" ;
+               :booktitle "IS&T Archiving 2013" ;
+               :doi "http://hdl.handle.net/1822/23978" ;
+               :month "04.02-05" ;
+               :title "	Guidelines for legacy repository migration" ;
+               :year 2013 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#arl
+:arl rdf:type owl:NamedIndividual ,
+              :Author ;
+     :name "A. R. Lopes" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#as
+:as rdf:type owl:NamedIndividual ,
+             :Author ;
+    :name "Ant�nio Sousa" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#asantos
+:asantos rdf:type owl:NamedIndividual ,
+                  :Author ;
+         :name "Andr� Santos" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#bad2012
+:bad2012 rdf:type owl:NamedIndividual ,
+                  :InProceeding ,
+                  :Publication ;
+         :temAutorRef :jcr ,
+                      :lf ,
+                      :mf ;
+         :address "Funda��o Calouste Gulbenkian, Lisboa" ;
+         :booktitle "11� Congresso Nacional de Bibliotec�rios, Arquivistas e Documentalistas" ;
+         :doi "http://hdl.handle.net/1822/21611" ;
+         :month "10.20" ;
+         :title "Boas Pr�ticas na Migra��o de Reposit�rios: li��es aprendidas com o CALM e o ARQBASE" ;
+         :year 2012 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#bad2015a
+:bad2015a rdf:type owl:NamedIndividual ,
+                   :InProceeding ,
+                   :Publication ;
+          :temAutorRef :alexandra ,
+                       :jcr ,
+                       :penteado ;
+          :address "Universidade de �vora, Portugal" ;
+          :booktitle "12� Congresso Nacional BAD" ;
+          :doi "http://hdl.handle.net/1822/38497" ;
+          :month "10.21" ;
+          :title "Uma ontologia para os processos de neg�cio da Administra��o" ;
+          :year 2015 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#bad2015b
+:bad2015b rdf:type owl:NamedIndividual ,
+                   :InProceeding ,
+                   :Publication ;
+          :temAutor :asantos ,
+                    :eloy ,
+                    :jcarvalho ,
+                    :jmoreira ;
+          :temAutorRef :hsilva ,
+                       :jcr ,
+                       :lf ,
+                       :mf ;
+          :address "Universidade de �vora, Portugal" ;
+          :booktitle "12� Congresso Nacional BAD" ;
+          :doi "http://hdl.handle.net/1822/37856" ;
+          :month "10.21" ;
+          :title "PT-CRIS: Um miradouro sobre o universo cient�fico nacional" ;
+          :year 2015 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#bf
+:bf rdf:type owl:NamedIndividual ,
+             :Author ;
+    :name "Bruno Ferreira" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#bs
+:bs rdf:type owl:NamedIndividual ,
+             :Author ;
+    :name "Barbara Sierman" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#cajo
+:cajo rdf:type owl:NamedIndividual ,
+               :Author ;
+      :name "Carlos J. Feij� Lopes" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#cb
+:cb rdf:type owl:NamedIndividual ,
+             :Author ;
+    :name "Christoph Becker" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#cisti2017
+:cisti2017 rdf:type owl:NamedIndividual ,
+                    :InProceeding ,
+                    :Publication ;
+           :temAutor :ap ;
+           :temAutorRef :jcr ,
+                        :lf ,
+                        :mf ;
+           :address "ISCTE, Lisboa, Portugal" ;
+           :booktitle "12th Iberian Conference on Information Systems and Technologies (CISTI)," ;
+           :doi "http://hdl.handle.net/1822/46093" ;
+           :month "06.24" ;
+           :title "RODA-in: A generic tool for the mass creation of Submission Information Packages" ;
+           :year 2017 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#des
+:des rdf:type owl:NamedIndividual ,
+              :Author ;
+     :name "Daniel Edgar Pinto Soares" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#dlm2014
+:dlm2014 rdf:type owl:NamedIndividual ,
+                  :InProceeding ,
+                  :Publication ;
+         :temAutor :hsilva ;
+         :temAutorRef :jcr ,
+                      :lf ;
+         :address "Lisbon, Portugal" ;
+         :booktitle "DLM Forum � 7th Triennial Conference: Making the Information Governance Landscape in Europe" ;
+         :doi "http://hdl.handle.net/1822/35183" ;
+         :month "11.12" ;
+         :title "Database Preservation Toolkit: a flexible tool to normalize and give access to databases" ;
+         :year 2014 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#edicic2015
+:edicic2015 rdf:type owl:NamedIndividual ,
+                     :InProceeding ,
+                     :Publication ;
+            :temAutor :alexandra ,
+                      :penteado ;
+            :temAutorRef :jcr ;
+            :address "Madrid, Espanha" ;
+            :booktitle "VII Encuentro Ib�rico EDICIC 2015" ;
+            :doi "http://hdl.handle.net/1822/38496" ;
+            :month "11.16" ;
+            :title "Da gest�o da informa��o � gest�o do conhecimento: uma proposta para a e-Administra��o em Portugal" ;
+            :year 2015 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#eloy
+:eloy rdf:type owl:NamedIndividual ,
+               :Author ;
+      :name "Eloy Rodrigues" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#fb
+:fb rdf:type owl:NamedIndividual ,
+             :Author ;
+    :name "Francisco Barbedo" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#grl
+:grl rdf:type owl:NamedIndividual ,
+              :Author ;
+     :name "Giovani Rubert Librelotto" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#guimaramus2012
+:guimaramus2012 rdf:type owl:NamedIndividual ,
+                         :InProceeding ,
+                         :Publication ;
+                :temAutorRef :jcr ;
+                :address "Pal�cio Vila Flor, Guimar�es" ;
+                :booktitle "Pensar a M�sica" ;
+                :doi "http://hdl.handle.net/1822/21660" ;
+                :month "03.23" ;
+                :title "	MuseCode: � procura da linearidade na m�sica tonal" ;
+                :year 2012 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#gva
+:gva rdf:type owl:NamedIndividual ,
+              :Editor ;
+     :name "Gustavo V. Arnold" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#hm
+:hm rdf:type owl:NamedIndividual ,
+             :Author ;
+    :name "Henrique Machado" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#hs
+:hs rdf:type owl:NamedIndividual ,
+             :Author ;
+    :name "H. Santos" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#hsilva
+:hsilva rdf:type owl:NamedIndividual ,
+                 :Author ;
+        :name "H�lder Silva" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#htm
+:htm rdf:type owl:NamedIndividual ,
+              :Author ;
+     :name "H. T. Machado" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#iPRES2016
+:iPRES2016 rdf:type owl:NamedIndividual ,
+                    :InProceeding ,
+                    :Publication ;
+           :temAutor :bf ;
+           :temAutorRef :jcr ,
+                        :lf ,
+                        :mf ;
+           :address "Bern, Switzerland" ;
+           :booktitle "iPRES: 13th International Conference on Digital Preservation" ;
+           :doi "http://hdl.handle.net/1822/43479" ;
+           :month "10.04" ;
+           :title "Database Preservation Toolkit: A relational database conversion and normalization tool" ;
+           :year 2016 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#icadl2012
+:icadl2012 rdf:type owl:NamedIndividual ,
+                    :InProceeding ,
+                    :Publication ;
+           :temAutorRef :cb ,
+                        :jcr ,
+                        :kd ,
+                        :lf ,
+                        :mf ,
+                        :pp ;
+           :address "Taipei, Taiwan" ;
+           :booktitle "14th International Conference on Asia-Pacific Digital Libraries, ICADL 2012" ;
+           :doi "http://hdl.handle.net/1822/21447" ;
+           :month "11.12" ;
+           :title "Design and architecture of a novel preservation watch system" ;
+           :year 2012 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#ipres2012
+:ipres2012 rdf:type owl:NamedIndividual ,
+                    :InProceeding ,
+                    :Publication ;
+           :temAutor :cb ,
+                     :kd ,
+                     :pp ;
+           :temAutorRef :jcr ,
+                        :lf ,
+                        :mf ;
+           :address "Toronto, Canada" ;
+           :booktitle "iPRES 2012 - 9th International Conference on Preservation of Digital Objects" ;
+           :doi "http://hdl.handle.net/1822/20666" ;
+           :month "11.01" ;
+           :title "Preservation watch : what to monitor and how" ;
+           :year 2012 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#ipres2013
+:ipres2013 rdf:type owl:NamedIndividual ,
+                    :InProceeding ,
+                    :Publication ;
+           :temAutor :aa ,
+                     :bs ,
+                     :mr ;
+           :temAutorRef :jcr ,
+                        :lf ,
+                        :mf ;
+           :address "Lisbon, Portugal" ;
+           :booktitle "iPRES 2013 - 10th International Conference on Preservation of Digital Objects" ;
+           :doi "http://hdl.handle.net/1822/25214" ;
+           :month "09.20" ;
+           :title "Automatic preservation watch using information extraction on the Web : a case study on semantic extraction of natural language for digital preservation" ;
+           :year 2013 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#jcarvalho
+:jcarvalho rdf:type owl:NamedIndividual ,
+                    :Author ;
+           :name "Jos� Carvalho" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#jcl
+:jcl rdf:type owl:NamedIndividual ,
+              :Editor ;
+     :name "Jo�o Correia Lopes" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#jcr
+:jcr rdf:type owl:NamedIndividual ,
+              :Author ;
+     :name "Jos� Carlos Ramalho" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#jg
+:jg rdf:type owl:NamedIndividual ,
+             :Author ;
+    :name "Jonas Gassen" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#jgr
+:jgr rdf:type owl:NamedIndividual ,
+              :Author ;
+     :name "J. G. Rocha" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#jj
+:jj rdf:type owl:NamedIndividual ,
+             :Author ;
+    :name "Jos� Jo�o Almeida" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#jlf
+:jlf rdf:type owl:NamedIndividual ,
+              :Author ;
+     :name "J. L. Faria" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#jls
+:jls rdf:type owl:NamedIndividual ,
+              :Author ;
+     :name "Jos� Luis Santos" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#jmf
+:jmf rdf:type owl:NamedIndividual ,
+              :Author ;
+     :name "J. M. Fernandes" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#jmoreira
+:jmoreira rdf:type owl:NamedIndividual ,
                    :Author ;
           :name "Jo�o Moreira" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#eloy
-    :eloy rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Eloy Rodrigues" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#jcarvalho
-    :jcarvalho rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Jos� Carvalho" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#alexandra
-    :alexandra rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Alexandra Louren�o" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#penteado
-    :penteado rdf:type owl:NamedIndividual ,
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#jv
+:jv rdf:type owl:NamedIndividual ,
+             :Author ;
+    :name "Juliana Vizzotto" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#kd
+:kd rdf:type owl:NamedIndividual ,
+             :Author ;
+    :name "Kresimir Duretec " .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#lc
+:lc rdf:type owl:NamedIndividual ,
+             :Editor ;
+    :name "Luis Carri�o" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#lcor
+:lcor rdf:type owl:NamedIndividual ,
+               :Author ;
+      :name "Luis Corujo" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#lf
+:lf rdf:type owl:NamedIndividual ,
+             :Author ;
+    :name "Luis Faria" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#lmf
+:lmf rdf:type owl:NamedIndividual ,
+              :Author ;
+     :name "Luis Miguel Ferros" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#lutz
+:lutz rdf:type owl:NamedIndividual ,
+               :Editor ;
+      :name "Lutz Maicher" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#mam
+:mam rdf:type owl:NamedIndividual ,
+              :Author ;
+     :name "Miguel �ngel Marzal Garcia-Quismondo" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#mcm
+:mcm rdf:type owl:NamedIndividual ,
+              :Author ;
+     :name "Maria da Concei��o Vieira Mota" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#mf
+:mf rdf:type owl:NamedIndividual ,
+             :Author ;
+    :name "Miguel Ferreira" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#mhj
+:mhj rdf:type owl:NamedIndividual ,
+              :Author ;
+     :name "M. H.  Jacinto" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#migaldo
+:migaldo rdf:type owl:NamedIndividual ,
+                  :Author ;
+         :name "Luis Miguel Alves Domingues" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#mjc
+:mjc rdf:type owl:NamedIndividual ,
+              :Author ;
+     :name "Maria Jesus Colmenero Ruiz" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#mjpl
+:mjpl rdf:type owl:NamedIndividual ,
+               :Author ;
+      :name "Maria Jo�o Pires Lima" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#mk
+:mk rdf:type owl:NamedIndividual ,
+             :Author ;
+    :name "Michael Kraxner" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#mm
+:mm rdf:type owl:NamedIndividual ,
+             :Author ;
+    :name "Mirkos Martins" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#mom
+:mom rdf:type owl:NamedIndividual ,
+              :Author ;
+     :name "M. O. Martins" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#mr
+:mr rdf:type owl:NamedIndividual ,
+             :Author ;
+    :name "Marcel Ras" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#mrh
+:mrh rdf:type owl:NamedIndividual ,
+              :Author ;
+     :name "M. R. Henriques" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#or2013
+:or2013 rdf:type owl:NamedIndividual ,
+                 :InProceeding ,
+                 :Publication ;
+        :temAutorRef :cb ,
+                     :jcr ,
+                     :kd ,
+                     :lf ,
+                     :mf ;
+        :address "Charlottetown, Canada" ;
+        :booktitle "Open Repositories 2013" ;
+        :doi " http://hdl.handle.net/1822/25101" ;
+        :month "07.08" ;
+        :title "Supporting the preservation lifecycle in repositories" ;
+        :year 2013 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#park
+:park rdf:type owl:NamedIndividual ,
+               :Editor ;
+      :name "Jack Park" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#penteado
+:penteado rdf:type owl:NamedIndividual ,
                    :Author ;
           :name "Pedro Penteado" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#hsilva
-    :hsilva rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "H�lder Silva" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#aa
-    :aa rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Alan Akbik" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#bs
-    :bs rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Barbara Sierman" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#mr
-    :mr rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Marcel Ras" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#cb
-    :cb rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Christoph Becker" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#kd
-    :kd rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Kresimir Duretec " .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#pp
-    :pp rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Petar Petrov" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#mjc
-    :mjc rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Maria Jesus Colmenero Ruiz" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#mam
-    :mam rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Miguel �ngel Marzal Garcia-Quismondo" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#rf
-    :rf rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Ricardo Freitas" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#mk
-    :mk rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Michael Kraxner" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#ar
-    :ar rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Andreas Rauber" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#mm
-    :mm rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Mirkos Martins" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#hm
-    :hm rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Henrique Machado" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#jv
-    :jv rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Juliana Vizzotto" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#lmf
-    :lmf rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Luis Miguel Ferros" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#jg
-    :jg rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Jonas Gassen" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#rct
-    :rct rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Rog�rio Correa Turchetti" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#htm
-    :htm rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "H. T. Machado" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#mom
-    :mom rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "M. O. Martins" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#pgf
-    :pgf rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "P. G. D. Ferreira" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#rpa
-    :rpa rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Renato Preigschadt de Azevedo" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#rc
-    :rc rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Rui Castro" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#lf
-    :lf rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Luis Faria" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#fb
-    :fb rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Francisco Barbedo" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#lcor
-    :lcor rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Luis Corujo" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#mjpl
-    :mjpl rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Maria Jo�o Pires Lima" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#as
-    :as rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Ant�nio Sousa" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#jls
-    :jls rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Jos� Luis Santos" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#grl
-    :grl rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Giovani Rubert Librelotto" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#arl
-    :arl rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "A. R. Lopes" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#mrh
-    :mrh rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "M. R. Henriques" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#jlf
-    :jlf rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "J. L. Faria" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#mhj
-    :mhj rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "M. H.  Jacinto" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#des
-    :des rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Daniel Edgar Pinto Soares" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#mcm
-    :mcm rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Maria da Concei��o Vieira Mota" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#cajo
-    :cajo rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Carlos J. Feij� Lopes" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#mf
-    :mf rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Miguel Ferreira" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#pt
-    :pt rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Pedro Taveira" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#vr
-    :vr rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Vasco Rocha" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#ram
-    :ram rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Ricardo Martins" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#ws
-    :ws rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Weber Souza" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#aab
-    :aab rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Ana Alice Baptista" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#migaldo
-    :migaldo rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Luis Miguel Alves Domingues" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#jj
-    :jj rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Jos� Jo�o Almeida" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#jgr
-    :jgr rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "J. G. Rocha" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#hs
-    :hs rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "H. Santos" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#jmf
-    :jmf rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "J. M. Fernandes" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#ajp
-    :ajp rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "A. J. Proen�a" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#jcr
-    :jcr rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Jos� Carlos Ramalho" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#prh
-    :prh rdf:type owl:NamedIndividual ,
-                   :Author ;
-          :name "Pedro Rangel Henriques" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#sa
-    :sa rdf:type owl:NamedIndividual ,
-                   :Editor ;
-          :name "Salvador Abreu" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#lc
-    :lc rdf:type owl:NamedIndividual ,
-                   :Editor ;
-          :name "Luis Carri�o" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#gva
-    :gva rdf:type owl:NamedIndividual ,
-                   :Editor ;
-          :name "Gustavo V. Arnold" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#albie
-    :albie rdf:type owl:NamedIndividual ,
-                   :Editor ;
-          :name "Alberto Sim�es" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#jcl
-    :jcl rdf:type owl:NamedIndividual ,
-                   :Editor ;
-          :name "Jo�o Correia Lopes" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#rq
-    :rq rdf:type owl:NamedIndividual ,
-                   :Editor ;
-          :name "Ricardo Queir�s" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#lutz
-    :lutz rdf:type owl:NamedIndividual ,
-                   :Editor ;
-          :name "Lutz Maicher" .
-     
-    ###  http://www.semanticweb.org/ant�niocarvalho/ontologies/pubs#park
-    :park rdf:type owl:NamedIndividual ,
-                   :Editor ;
-          :name "Jack Park" .
-    
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#pgf
+:pgf rdf:type owl:NamedIndividual ,
+              :Author ;
+     :name "P. G. D. Ferreira" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#pp
+:pp rdf:type owl:NamedIndividual ,
+             :Author ;
+    :name "Petar Petrov" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#prh
+:prh rdf:type owl:NamedIndividual ,
+              :Author ;
+     :name "Pedro Rangel Henriques" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#pt
+:pt rdf:type owl:NamedIndividual ,
+             :Author ;
+    :name "Pedro Taveira" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#ram
+:ram rdf:type owl:NamedIndividual ,
+              :Author ;
+     :name "Ricardo Martins" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#rc
+:rc rdf:type owl:NamedIndividual ,
+             :Author ;
+    :name "Rui Castro" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#rct
+:rct rdf:type owl:NamedIndividual ,
+              :Author ;
+     :name "Rog�rio Correa Turchetti" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#rf
+:rf rdf:type owl:NamedIndividual ,
+             :Author ;
+    :name "Ricardo Freitas" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#rpa
+:rpa rdf:type owl:NamedIndividual ,
+              :Author ;
+     :name "Renato Preigschadt de Azevedo" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#rq
+:rq rdf:type owl:NamedIndividual ,
+             :Editor ;
+    :name "Ricardo Queir�s" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#sa
+:sa rdf:type owl:NamedIndividual ,
+             :Editor ;
+    :name "Salvador Abreu" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#vr
+:vr rdf:type owl:NamedIndividual ,
+             :Author ;
+    :name "Vasco Rocha" .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/pubs#ws
+:ws rdf:type owl:NamedIndividual ,
+             :Author ;
+    :name "Weber Souza" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

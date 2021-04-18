@@ -26,9 +26,10 @@ module.exports.listAuthors = () => {
 }
 
 module.exports.getAuthor = (id) => {
-    var getLink = "http://epl.di.uminho.pt:8738/api/rdf4j/query/http://epl.di.uminho.pt:8738/api/rdf4j/update/A85813-TP5" 
+    var getLink = "http://epl.di.uminho.pt:8738/api/rdf4j/query/A85813-TP5?query=" 
     var query = `select * where {`
                 + `:` + id + `?p ?o}`
+    console.log(prefixes+query)            
     var encoded = encodeURIComponent(prefixes + query)
     
     return axios.get(getLink + encoded)
