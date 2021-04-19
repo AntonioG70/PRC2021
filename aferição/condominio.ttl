@@ -1,0 +1,512 @@
+@prefix : <http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/antóniocarvalho/ontologies/condominio> .
+
+<http://www.semanticweb.org/antóniocarvalho/ontologies/condominio> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#temEntidadeRceita
+:temEntidadeRceita rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#cobraEm
+:cobraEm rdf:type owl:ObjectProperty ;
+         owl:inverseOf :temEntidadeDespesa .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#donoDe
+:donoDe rdf:type owl:ObjectProperty ;
+        owl:inverseOf :pertenceA .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#pertenceA
+:pertenceA rdf:type owl:ObjectProperty ;
+           rdfs:domain :Fraçao ;
+           rdfs:range :Proprietario_Arrendatario .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#receitaEm
+:receitaEm rdf:type owl:ObjectProperty ;
+           owl:inverseOf :temEntidadeReceita .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#relativoA
+:relativoA rdf:type owl:ObjectProperty ;
+           owl:inverseOf :temMapaPagamento .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#temEntidadeDespesa
+:temEntidadeDespesa rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Evento_financeiro ;
+                    rdfs:range :Cobradora .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#temEntidadeReceita
+:temEntidadeReceita rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Evento_financeiro ;
+                    rdfs:range :Fraçao .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#temMapaPagamento
+:temMapaPagamento rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Fraçao ;
+                  rdfs:range :Mapa_pagamento .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#abr
+:abr rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Mapa_pagamento .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#ago
+:ago rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Mapa_pagamento .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#data
+:data rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#descriçao
+:descriçao rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Evento_financeiro .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#dez
+:dez rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Mapa_pagamento .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#email
+:email rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Proprietario_Arrendatario .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#fev
+:fev rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Mapa_pagamento .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#jan
+:jan rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Mapa_pagamento .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#jul
+:jul rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Mapa_pagamento .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#jun
+:jun rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Mapa_pagamento .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#mai
+:mai rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Mapa_pagamento .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#mar
+:mar rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Mapa_pagamento .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#mensalidade
+:mensalidade rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Fraçao .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#nome
+:nome rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Entidade .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#nov
+:nov rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Mapa_pagamento .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#out
+:out rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Mapa_pagamento .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#permilagem
+:permilagem rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Fraçao .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#set
+:set rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Mapa_pagamento .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#telefone
+:telefone rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Proprietario_Arrendatario .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#tipo
+:tipo rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Evento_financeiro .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#valor
+:valor rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Evento_financeiro .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#Cobradora
+:Cobradora rdf:type owl:Class ;
+           rdfs:subClassOf :Entidade .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#Entidade
+:Entidade rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#Evento_financeiro
+:Evento_financeiro rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#Fraçao
+:Fraçao rdf:type owl:Class ;
+        rdfs:subClassOf :Entidade .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#Mapa_pagamento
+:Mapa_pagamento rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#Proprietario_Arrendatario
+:Proprietario_Arrendatario rdf:type owl:Class ;
+                           rdfs:subClassOf :Entidade .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#CGD
+:CGD rdf:type owl:NamedIndividual ,
+              :Cobradora .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#CMB
+:CMB rdf:type owl:NamedIndividual ,
+              :Cobradora .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#EDP
+:EDP rdf:type owl:NamedIndividual ,
+              :Cobradora .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#Kone
+:Kone rdf:type owl:NamedIndividual ,
+               :Cobradora .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#Limpeza
+:Limpeza rdf:type owl:NamedIndividual ,
+                  :Cobradora .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#Loja
+:Loja rdf:type owl:NamedIndividual ,
+               :Fraçao ,
+               :Mapa_pagamento ;
+      :abr 0 ;
+      :ago 0 ;
+      :dez 0 ;
+      :fev 0 ;
+      :jan 0 ;
+      :jul 0 ;
+      :jun 0 ;
+      :mai 0 ;
+      :mar 0 ;
+      :mensalidade 6.06 ;
+      :nome "A" ;
+      :nov 0 ;
+      :out 0 ;
+      :permilagem 50 ;
+      :set 0 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#M1Dto
+:M1Dto rdf:type owl:NamedIndividual ,
+                :Mapa_pagamento ;
+       :abr 1 ;
+       :ago 0 ;
+       :dez 0 ;
+       :fev 1 ;
+       :jan 1 ;
+       :jul 0 ;
+       :jun 0 ;
+       :mai 0 ;
+       :mar 1 ;
+       :nov 0 ;
+       :out 0 ;
+       :set 0 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#M1Esq
+:M1Esq rdf:type owl:NamedIndividual ,
+                :Mapa_pagamento ;
+       :abr 0 ;
+       :ago 0 ;
+       :dez 0 ;
+       :fev 1 ;
+       :jan 1 ;
+       :jul 0 ;
+       :jun 0 ;
+       :mai 0 ;
+       :mar 1 ;
+       :nov 0 ;
+       :out 0 ;
+       :set 0 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#M2Dto
+:M2Dto rdf:type owl:NamedIndividual ,
+                :Mapa_pagamento ;
+       :abr 0 ;
+       :ago 0 ;
+       :dez 0 ;
+       :fev 0 ;
+       :jan 0 ;
+       :jul 0 ;
+       :jun 0 ;
+       :mai 0 ;
+       :mar 0 ;
+       :nov 0 ;
+       :out 0 ;
+       :set 0 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#M3Dto
+:M3Dto rdf:type owl:NamedIndividual ,
+                :Mapa_pagamento ;
+       :abr 1 ;
+       :ago 1 ;
+       :dez 1 ;
+       :fev 1 ;
+       :jan 1 ;
+       :jul 1 ;
+       :jun 1 ;
+       :mai 1 ;
+       :mar 1 ;
+       :nov 1 ;
+       :out 1 ;
+       :set 1 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#M3Esq
+:M3Esq rdf:type owl:NamedIndividual ,
+                :Mapa_pagamento ;
+       :abr 0 ;
+       :ago 0 ;
+       :dez 0 ;
+       :fev 1 ;
+       :jan 1 ;
+       :jul 0 ;
+       :jun 0 ;
+       :mai 0 ;
+       :mar 1 ;
+       :nov 0 ;
+       :out 0 ;
+       :set 0 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#M4Dto
+:M4Dto rdf:type owl:NamedIndividual ,
+                :Mapa_pagamento ;
+       :abr 1 ;
+       :ago 1 ;
+       :dez 1 ;
+       :fev 1 ;
+       :jan 1 ;
+       :jul 1 ;
+       :jun 1 ;
+       :mai 1 ;
+       :mar 1 ;
+       :nov 1 ;
+       :out 1 ;
+       :set 1 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#M5Dto
+:M5Dto rdf:type owl:NamedIndividual ,
+                :Mapa_pagamento ;
+       :abr 1 ;
+       :ago 0 ;
+       :dez 0 ;
+       :fev 1 ;
+       :jan 1 ;
+       :jul 0 ;
+       :jun 1 ;
+       :mai 1 ;
+       :mar 1 ;
+       :nov 0 ;
+       :out 0 ;
+       :set 0 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#M5Esq
+:M5Esq rdf:type owl:NamedIndividual ,
+                :Mapa_pagamento ;
+       :abr 1 ;
+       :ago 0 ;
+       :dez 0 ;
+       :fev 1 ;
+       :jan 1 ;
+       :jul 0 ;
+       :jun 0 ;
+       :mai 0 ;
+       :mar 1 ;
+       :nov 0 ;
+       :out 0 ;
+       :set 0 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#M6Dto
+:M6Dto rdf:type owl:NamedIndividual ,
+                :Mapa_pagamento ;
+       :abr 1 ;
+       :ago 1 ;
+       :dez 0 ;
+       :fev 1 ;
+       :jan 1 ;
+       :jul 1 ;
+       :jun 1 ;
+       :mai 1 ;
+       :mar 1 ;
+       :nov 0 ;
+       :out 0 ;
+       :set 0 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#M7Dto
+:M7Dto rdf:type owl:NamedIndividual ,
+                :Mapa_pagamento ;
+       :abr 1 ;
+       :ago 0 ;
+       :dez 0 ;
+       :fev 1 ;
+       :jan 1 ;
+       :jul 0 ;
+       :jun 0 ;
+       :mai 0 ;
+       :mar 1 ;
+       :nov 0 ;
+       :out 0 ;
+       :set 0 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#M7Esq
+:M7Esq rdf:type owl:NamedIndividual ,
+                :Mapa_pagamento ;
+       :abr 1 ;
+       :ago 0 ;
+       :dez 0 ;
+       :fev 1 ;
+       :jan 1 ;
+       :jul 0 ;
+       :jun 0 ;
+       :mai 0 ;
+       :mar 1 ;
+       :nov 0 ;
+       :out 0 ;
+       :set 0 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#M8Dto
+:M8Dto rdf:type owl:NamedIndividual ,
+                :Mapa_pagamento ;
+       :abr 0 ;
+       :ago 0 ;
+       :dez 0 ;
+       :fev 0 ;
+       :jan 0 ;
+       :jul 0 ;
+       :jun 0 ;
+       :mai 0 ;
+       :mar 0 ;
+       :nov 0 ;
+       :out 0 ;
+       :set 0 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#PluriRapel
+:PluriRapel rdf:type owl:NamedIndividual ,
+                     :Cobradora .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#Serralheiro
+:Serralheiro rdf:type owl:NamedIndividual ,
+                      :Cobradora .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#Vizinhos
+:Vizinhos rdf:type owl:NamedIndividual ,
+                   :Cobradora .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#1Dto
+<http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#1Dto> rdf:type owl:NamedIndividual ,
+                                                                                 :Fraçao ;
+                                                                        :temMapaPagamento :M1Dto ;
+                                                                        :mensalidade 36.45 ;
+                                                                        :nome "F" ;
+                                                                        :permilagem 24 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#1Esq
+<http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#1Esq> rdf:type owl:NamedIndividual ,
+                                                                                 :Fraçao ;
+                                                                        :temMapaPagamento :M1Esq ;
+                                                                        :mensalidade 51.63 ;
+                                                                        :nome "G" ;
+                                                                        :permilagem 34 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#2Dto
+<http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#2Dto> rdf:type owl:NamedIndividual ,
+                                                                                 :Fraçao ;
+                                                                        :temMapaPagamento :M2Dto ;
+                                                                        :mensalidade 36.45 ;
+                                                                        :nome "H" ;
+                                                                        :permilagem 24 .
+
+
+###  http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#2020/001
+<http://www.semanticweb.org/antóniocarvalho/ontologies/condominio#2020/001> rdf:type owl:NamedIndividual ,
+                                                                                     :Evento_financeiro ;
+                                                                            :temEntidadeDespesa :CGD ;
+                                                                            :data "2020-01-04" ;
+                                                                            :descriçao "Manutenção da conta" ;
+                                                                            :tipo "Despesa" ;
+                                                                            :valor "7.28"^^xsd:float .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
