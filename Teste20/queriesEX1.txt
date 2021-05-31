@@ -1,0 +1,54 @@
+
+1-
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.semanticweb.org/antóniocarvalho/ontologies/emd#>
+select (count(?e) as ?Num) where {
+    ?e rdf:type :EMD.
+}
+
+2-
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.semanticweb.org/antóniocarvalho/ontologies/emd#>
+select (count(?e) as ?Num)  where {
+    ?e rdf:type :EMD;
+       :resultado "True".	
+}
+
+3-
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.semanticweb.org/antóniocarvalho/ontologies/emd#>
+select ?g (count(?e) as ?Num) where {
+    ?a rdf:type :Atleta;
+       :genero ?g;
+       :temEMD ?e.
+} GROUP BY (?g)
+
+4-
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.semanticweb.org/antóniocarvalho/ontologies/emd#>
+select ?m (count(?e) as ?Num) where {
+    ?a rdf:type :Atleta;
+       :praticaModalidade ?m;
+       :temEMD ?e.
+} GROUP BY (?m)
+
+5-
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.semanticweb.org/antóniocarvalho/ontologies/emd#>
+select (count(?a) as ?Num) where {
+    ?a rdf:type :Atleta;
+       :temClube :GDGoma;
+       :federado "True";
+       :temEMD ?e.
+} 
+
+6-
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.semanticweb.org/antóniocarvalho/ontologies/emd#>
+select (count(?a) as ?Num) where {
+    ?a rdf:type :Atleta;
+       :praticaModalidade :Triatlo;
+       :genero "F";
+       :temEMD ?e.
+} 
+
